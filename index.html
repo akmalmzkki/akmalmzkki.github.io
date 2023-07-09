@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="yso_fyigjwBt-bsZ78JMFsSJUUxHLtpIOEmQqio691I" />
+
+    <!-- Library CSS -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/sweetalert.css">
+    <link rel="stylesheet" href="static/css/aos.css">
+
+    <!-- Font Awesome Icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <title>akmalmzkki Website - Landing Page</title>
+</head>
+<body>
+    <!-- Background -->
+    <video autoplay loop muted class="homebg">
+        <source src="assets/bg-v.mp4">
+    </video>
+    <!-- End of Background -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container">
+            <a class="navbar-brand px-4" href="#">AKMALMZKKI</a>
+            <button class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNavAltMarkup" 
+                aria-controls="navbarNavAltMarkup" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+                <svg version="1.0"
+                    width="32px" height="32px" viewBox="0 0 512.000000 512.000000"
+                    preserveAspectRatio="xMidYMid meet" style="transform: scale(-1,1);">                
+                    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#FFFFFF" stroke="none">
+                        <path d="M480 3520 l0 -160 2080 0 2080 0 0 160 0 160 -2080 0 -2080 0 0 -160z"/>
+                        <path d="M480 2560 l0 -160 2080 0 2080 0 0 160 0 160 -2080 0 -2080 0 0 -160z"/>
+                        <path d="M480 1600 l0 -160 2080 0 2080 0 0 160 0 160 -2080 0 -2080 0 0 -160z"/>
+                    </g>
+                </svg>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav mx-auto my-auto">
+                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <ul class="nav-link" href="">Qualification
+                        <svg class="svg-dropdown" height="1.2em" viewBox="0 0 320 512" fill="white">
+                            <path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/>
+                        </svg>
+                        <ul class="dropdown-content">
+                            <li class="nav-link">
+                                <a href="#experience">
+                                    <svg class="svg-dropdown-left" height="1em" viewBox="0 0 512 512" fill="white">
+                                        <path d="M184 0c30.9 0 56 25.1 56 56V456c0 30.9-25.1 56-56 56c-28.9 0-52.7-21.9-55.7-50.1c-5.2 1.4-10.7 2.1-16.3 2.1c-35.3 0-64-28.7-64-64c0-7.4 1.3-14.6 3.6-21.2C21.4 367.4 0 338.2 0 304c0-31.9 18.7-59.5 45.8-72.3C37.1 220.8 32 207 32 192c0-30.7 21.6-56.3 50.4-62.6C80.8 123.9 80 118 80 112c0-29.9 20.6-55.1 48.3-62.1C131.3 21.9 155.1 0 184 0zM328 0c28.9 0 52.6 21.9 55.7 49.9c27.8 7 48.3 32.1 48.3 62.1c0 6-.8 11.9-2.4 17.4c28.8 6.2 50.4 31.9 50.4 62.6c0 15-5.1 28.8-13.8 39.7C493.3 244.5 512 272.1 512 304c0 34.2-21.4 63.4-51.6 74.8c2.3 6.6 3.6 13.8 3.6 21.2c0 35.3-28.7 64-64 64c-5.6 0-11.1-.7-16.3-2.1c-3 28.2-26.8 50.1-55.7 50.1c-30.9 0-56-25.1-56-56V56c0-30.9 25.1-56 56-56z"/>
+                                    </svg>Experience
+                                </a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#education">
+                                    <svg class="svg-dropdown-left" height="1em" viewBox="0 0 640 512" fill="white">
+                                        <path d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"/>
+                                    </svg>Education
+                                </a>
+                            </li>
+                        </ul>
+                    </ul>
+                    <a class="nav-link" href="#project">Projects</a>
+                    <a class="nav-link" href="#skills">Skills</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End of Navbar -->
+    
+    <!-- Home -->
+    <section id="home">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-md summary">
+                    <div class="porch-teks">
+                        <div class="porch-heading" data-aos="fade-right">AKMAL MUZAKKI BAKIR</div>
+                        <div class="porch-desc" data-aos="fade-down">Hello, I’m Akmal, a programmer who currently focus on artificial intellegent, machine learning, and about data manipulation. Ah, and I’m also doing UI/UX design and web development for my projects too!</div>
+                        <div class="porch-buttons d-flex">
+                            <a class="btn d-flex align-items-center justify-content center btn-dark" href="assets/CV.pdf" download="CV.pdf">My CV
+                                <svg id="btn-download" height="1.2em" viewBox="0 0 512 512" fill="white">
+                                    <path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/>
+                                </svg>
+                            </a>
+                            <a class="btn d-flex align-items-center justify-content center btn-dark" href="#contact">Tell me your Idea!
+                                <svg id="btn-arrow" height="14" viewBox="0 0 30 17" fill="none">
+                                    <path d="M0.5 9.5H28.5M28.5 9.5L20 1M28.5 9.5L21 16.5" stroke="white"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md mypict">
+                    <img class="gigachad1" src="assets/Ellipse 3.png" alt="" data-aos="fade-left">
+                    <img class="doublerectangle" src="assets/double rectangle.png" alt="">
+                </div>
+            </div>
+            <!-- <div class="porch-info d-flex" data-aos="fade-right">
+                <div class="porch-sub-info d-flex align-items-center info1">
+                    <div class="porch-info-num d-flex align-items-center">1<span>+</span></div>
+                    <div class="porch-info-desc">years<br>experience</div>
+                </div>
+                <div class="porch-sub-info d-flex align-items-center info2">
+                    <div class="porch-info-num d-flex align-items-center">7<span>+</span></div>
+                    <div class="porch-info-desc">skills<br>learned</div>
+                </div>
+                <div class="porch-sub-info d-flex align-items-center info3">
+                    <div class="porch-info-num d-flex align-items-center">85<span>%</span></div>
+                    <div class="porch-info-desc">activated<br>learned</div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <!-- End of Home-->
+
+    <!-- About -->
+    <section id="about">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-md gigachad2">
+                <div class="loader-wrapper" data-aos="fade-right">
+                    <div class="loader">
+                        <div class="loader loader-inner">
+                            <div class="loader loader-inner deep">
+                                <div class="loaded"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md about-dsc">
+                <div class="about-heading">
+                    <div class="about-text" data-aos="fade-down-left">UNDERGRADUATE STUDENT DATA SCIENCE AT TELKOM UNIVERSITY.</div>
+                </div>
+                <div class="line"></div>
+                <div class="about-story" data-aos="fade-up-left">
+                    <div class="dsc">
+                        I am a Data Science student at Telkom University. 
+                        I was born in Jakarta on August 25, 2003. 
+                        I am experienced in teaching basic mathematics and logic programming. 
+                        I'm interested in machine learning and artificial intelligence, and I'm currently deepening that knowledge. 
+                        In addition, some of the sciences that I often learn are data science, data analysis, data visualization, and deep learning. 
+                        Some of the sciences I like to learn are simple backend and frontend science.
+                    </div>
+                </div>
+                <div class="about-sosmed d-flex" data-aos="fade-left">
+                    <ul class="social-icons">
+                        <li>
+                            <a href="https://wa.link/vt3n26"><i class="fab fa-whatsapp"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/akmal_mzkki"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/akmal-muzakki-0116a3219/"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/akmalmzkki"><i class="fab fa-github"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- End of About -->
+
+    <!-- Qualification -->
+    <section id="qualification">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="qualification-heading text-center">QUALIFICATION</div>
+                <img class="dottedgrid" src="assets/dotted grid.svg" alt="">
+                <div class="col-md">
+                    <div class="experience-heading text-center" data-aos="flip-left">
+                        <svg class="svg-dropdown-left" height="1em" viewBox="0 0 512 512" fill="white">
+                            <path d="M184 0c30.9 0 56 25.1 56 56V456c0 30.9-25.1 56-56 56c-28.9 0-52.7-21.9-55.7-50.1c-5.2 1.4-10.7 2.1-16.3 2.1c-35.3 0-64-28.7-64-64c0-7.4 1.3-14.6 3.6-21.2C21.4 367.4 0 338.2 0 304c0-31.9 18.7-59.5 45.8-72.3C37.1 220.8 32 207 32 192c0-30.7 21.6-56.3 50.4-62.6C80.8 123.9 80 118 80 112c0-29.9 20.6-55.1 48.3-62.1C131.3 21.9 155.1 0 184 0zM328 0c28.9 0 52.6 21.9 55.7 49.9c27.8 7 48.3 32.1 48.3 62.1c0 6-.8 11.9-2.4 17.4c28.8 6.2 50.4 31.9 50.4 62.6c0 15-5.1 28.8-13.8 39.7C493.3 244.5 512 272.1 512 304c0 34.2-21.4 63.4-51.6 74.8c2.3 6.6 3.6 13.8 3.6 21.2c0 35.3-28.7 64-64 64c-5.6 0-11.1-.7-16.3-2.1c-3 28.2-26.8 50.1-55.7 50.1c-30.9 0-56-25.1-56-56V56c0-30.9 25.1-56 56-56z"/>
+                        </svg> My Experience
+                    </div>
+                    <div id="experience">
+                        <div class="qualification-section" id="first">
+                            <div class="qualification-point"></div>
+                            <div class="qualification-text" data-aos="fade-right">Head Of Division Social Media marketing <span><br>- StudyGez (May 2021 - January 2022) </span></div>
+                            <div class="qualification-desc" data-aos="fade-left">In that division, I was the division leader. And my job is usually to divide the schedule to manage social media such as Instagram and LinkedIn to members, as well as do a weekly meeting routine.</div>
+                        </div>
+                        <div class="qualification-section">
+                            <div class="qualification-point"></div>
+                            <div class="qualification-text" data-aos="fade-right">Math Tutor (Volunteer) <span><br>- Ganesha Operation (November 2020 - April 2021)</span></div>
+                            <div class="qualification-desc" data-aos="fade-left">One of the ways I learned was, by sharing my knowledge with others, then I planned to become a math tutor at one of the start-ups to re-hone my math skills. My teaching system was online at that time, because of the covid-19 pandemic.</div>
+                        </div>
+                        <div class="qualification-section">
+                            <div class="qualification-point"></div>
+                            <div class="qualification-text" data-aos="fade-right">Math Tutor (Volunteer) <span><br>- StudyGez (June 2021 - December 2021)</span></div>
+                            <div class="qualification-desc" data-aos="fade-left">One of the ways I learned was, by sharing my knowledge with others, then I planned to become a math tutor at one of the start-ups to re-hone my math skills. My teaching system was online at that time, because of the covid-19 pandemic.</div>
+                        </div>
+                        <div class="qualification-section">
+                            <div class="qualification-point"></div>
+                            <div class="qualification-text" data-aos="fade-right">Lead Of Divison Coding <span><br>- Islah LDK Al-Fath Telkom University (August 2022 - November 2022)</span></div>
+                            <div class="qualification-desc" data-aos="fade-left">Coding stands for Consumption and Funding, in this division, I want to get new experience in managing finances. In this division, I served as division chairman.</div>
+                        </div>
+                        <div class="qualification-section">
+                            <div class="qualification-point"></div>
+                            <div class="qualification-text" data-aos="fade-right">Assistent Lecturer Discreate Math <span><br>- Faculty of Informatics (March 2023 - July 2023)</span></div>
+                            <div class="qualification-desc" data-aos="fade-left">I used to be an assistant lecturer in discrete mathematics. This job is done to fill spare time during college. I took this position because I felt I was a good fit in the field.</div>
+                        </div>
+                        <div class="qualification-section">
+                            <div class="qualification-point"></div>
+                            <div class="qualification-text" data-aos="fade-right">Assistant Lecturer Programming Algorithm <span><br>- Faculty of Informatics (March 2023 - July 2023)</span></div>
+                            <div class="qualification-desc" data-aos="fade-left">I used to be an assistant lecturer in programming algorith. This job is done to fill spare time during college. I took this position because I felt I was a good fit in the field.</div>
+                        </div>
+                        <div class="qualification-section" id="last">
+                            <div class="qualification-point"></div>
+                            <div class="qualification-text" data-aos="fade-right">Staff Ministry of Professional Development <span><br>- Student Association of Telkom University (March 2023 - Present)</span></div>
+                            <div class="qualification-desc" data-aos="fade-left">I once joined a campus organization, namely the student association, with a position as a staff of the professional development division. Here I get a lot of new knowledge about professions that will be in high demand in the future.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="experience-heading text-center" data-aos="flip-left">
+                        <svg class="svg-dropdown-left" height="1em" viewBox="0 0 640 512" fill="white">
+                            <path d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"/>
+                        </svg> My Education
+                    </div>
+                    <div id="education">
+                        <div class="qualification-section" id="first">
+                            <div class="qualification-point"></div>
+                            <div class="qualification-text" data-aos="fade-right">MAN 1 Kota Bekasi <span><br>- Major: IPA (July 2018 - July 2021)</span></div>
+                            <div class="qualification-desc" data-aos="fade-left">I once went to school at MAN 1 Bekasi City majoring in Science. My school is quite far from home, but I love going to school there, because there are many memorable experiences such as participating in various competitions, and making friends with frequency.</div>
+                        </div>
+                        <div class="qualification-section" id="last">
+                            <div class="qualification-point"></div>
+                            <div class="qualification-text" data-aos="fade-right">Telkom University <span><br>- Major: Data Science (August 2021 - Present)<br>- IPK: 3.87</span></div>
+                            <div class="qualification-desc" data-aos="fade-left">Currently, I am studying at Telkom University majoring in S1 Data Science. This department is fairly new because considering the need for data in the future is getting higher. I find it a good fit in this field because I like to play around data and logic.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of experience -->
+    
+    <!-- Project -->
+    <section id="project">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-md">
+                    <img class="rotatedrectangle" src="assets/rotatedrectangle.png" alt="">
+                    <div class="works-heading text-center">
+                        <div class="works-text" data-aos="flip-left">PROJECTS I MADE</div>
+                        <div class="works-desc" data-aos="flip-right">I have been made several projects. Here are some  of my selected projects</div>
+                    </div>
+                    <div class="row works-projects">
+                        <div class="col-md d-flex justify-content-center">
+                            <div class="project-box" data-aos="fade-up">
+                                <div class="project-img">
+                                    <img src="assets/salary.jpeg" alt="">
+                                </div>
+                                <div class="project-content">
+                                    <div class="project-tags d-flex">
+                                        <div class="project-tag">Machine Learning</div>
+                                    </div>
+                                    <div class="project-text">
+                                        <div class="project-title">PREDICT SALARY</div>
+                                        <div class="project-desc">
+                                            Website for predict your Salary according based on your country, lecturer, job status, work, gender, and experience.
+                                        </div>
+                                    </div>
+                                    <a class="btn project-btn d-flex align-items-center" href="https://github.com/akmalmzkki/predict-salary/tree/main">Details
+                                        <svg id="btn-arrow" width="28" height="11" viewBox="0 0 30 17" fill="none">
+                                            <path d="M0.5 9.5H28.5M28.5 9.5L20 1M28.5 9.5L21 16.5" stroke="white"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md d-flex justify-content-center">
+                            <div class="project-box" data-aos="fade-up">
+                                <div class="project-img">
+                                    <img src="assets/uiux.png" alt="">
+                                </div>
+                                <div class="project-content">
+                                    <div class="project-tags d-flex">
+                                        <div class="project-tag">UI/UX</div>
+                                    </div>
+                                    <div class="project-text">
+                                        <div class="project-title">ROOM</div>
+                                        <div class="project-desc">Application designed for rental housing search.</div>
+                                    </div>
+                                    <a class="btn project-btn d-flex align-items-center" href="https://www.figma.com/proto/aKXzYEYNWjGAn6gC25KNHS/IMK-Project?type=design&node-id=61-51&scaling=scale-down&page-id=59%3A2&starting-point-node-id=61%3A51">Details
+                                        <svg id="btn-arrow" width="28" height="11" viewBox="0 0 30 17" fill="none">
+                                            <path d="M0.5 9.5H28.5M28.5 9.5L20 1M28.5 9.5L21 16.5" stroke="white"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md d-flex justify-content-center">
+                            <div class="project-box" data-aos="fade-up">
+                                <div class="project-img">
+                                    <img src="assets/recommendation.png" alt="">
+                                </div>
+                                <div class="project-content">
+                                    <div class="project-tags d-flex">
+                                        <div class="project-tag">Machine Learning</div>
+                                    </div>
+                                    <div class="project-text">
+                                        <div class="project-title">RECOMMENDATION SYSTEM</div>
+                                        <div class="project-desc">Movie recommendation system app from tmdb movie database with sentiment analysis.</div>
+                                    </div>
+                                    <a class="btn project-btn d-flex align-items-center" href="https://github.com/akmalmzkki/movie-recommendation-system-with-sentiment-analysis">Details
+                                        <svg id="btn-arrow" width="28" height="11" viewBox="0 0 30 17" fill="none">
+                                            <path d="M0.5 9.5H28.5M28.5 9.5L20 1M28.5 9.5L21 16.5" stroke="white"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-md justify-content-center text-center">
+                            <button class="btn btn-light dribble" onclick="window.location.href='https://github.com/akmalmzkki'" data-aos="fade-left">See more on my Github
+                                <svg id="btn-arrow" width="27" height="14" viewBox="0 0 30 17" fill="none">
+                                    <path d="M0.5 9.5H28.5M28.5 9.5L20 1M28.5 9.5L21 16.5" stroke="#28293D"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Project -->
+    
+    <!-- Skills -->
+    <section id="skills">
+       <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-md">
+                    <div class="works-heading text-center">
+                        <div class="works-text" data-aos="flip-left">MY SKILLS</div>
+                        <div class="works-desc" data-aos="flip-right">I have been made several skills. Here are some of my selected skills</div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="box-container">
+                        <div class="box-item" data-aos="fade-right">
+                            <div class="flip-box">
+                                <div class="flip-box-front text-center" style="background: #333448;">
+                                    <div class="inner" style="color: white">
+                                        <h3 class="flip-box-header">PROGRAMMING LANGUAGE</h3>
+                                        <svg class="flip-box-img" height="1.4em" viewBox="0 0 512 512" fill="white">
+                                            <path d="M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 72L32 192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l288 0 0 72c0 9.6 5.7 18.2 14.5 22z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="flip-box-back align-item-center" style="background: #333448;">
+                                    <div class="inner" style="color: white;">
+                                        <ul style=" list-style-type: none; ">
+                                            <li><svg height="0.8em" viewBox="0 0 512 512" fill="white" style="padding: 2px">
+                                                    <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+                                                </svg>
+                                                Python
+                                            </li>
+                                            <li><svg height="0.8em" viewBox="0 0 512 512" fill="white" style="padding: 2px">
+                                                    <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+                                                </svg>
+                                                Java
+                                            </li>
+                                            <li><svg height="0.8em" viewBox="0 0 512 512" fill="white" style="padding: 2px">
+                                                    <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+                                                </svg>
+                                                C++
+                                            </li>
+                                            <li><svg height="0.8em" viewBox="0 0 512 512" fill="white" style="padding: 2px">
+                                                    <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+                                                </svg>
+                                                Go
+                                            </li>
+                                            <li><svg height="0.8em" viewBox="0 0 512 512" fill="white" style="padding: 2px">
+                                                    <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+                                                </svg>
+                                                Javascript
+                                            </li>
+                                            <li><svg height="0.8em" viewBox="0 0 512 512" fill="white" style="padding: 2px">
+                                                    <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+                                                </svg>
+                                                HTML/CSS
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-item" data-aos="fade-up">
+                            <div class="flip-box">
+                                <div class="flip-box-front text-center" style="background: #333448;;">
+                                    <div class="inner" style="color: white">
+                                        <h3 class="flip-box-header">DATABASES</h3>
+                                        <svg class="flip-box-img" height="1.4em" viewBox="0 0 512 512" fill="white">
+                                            <path d="M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 72L32 192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l288 0 0 72c0 9.6 5.7 18.2 14.5 22z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="flip-box-back align-item-center" style="background: #333448;">
+                                    <div class="inner" style="color: white;">
+                                        <ul style="list-style-type: none; ">
+                                            <li><svg height="0.8em" viewBox="0 0 512 512" fill="white" style="padding: 2px">
+                                                    <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+                                                </svg>
+                                                MySQL
+                                            </li>
+                                            <li><svg height="0.8em" viewBox="0 0 512 512" fill="white" style="padding: 2px">
+                                                    <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+                                                </svg>
+                                                MongoDB
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-item" data-aos="fade-left">
+                            <div class="flip-box">
+                                <div class="flip-box-front text-center" style="background: #333448;">
+                                    <div class="inner" style="color: white">
+                                        <h3 class="flip-box-header">DESIGN</h3>
+                                        <svg class="flip-box-img" height="1.4em" viewBox="0 0 512 512" fill="white">
+                                            <path d="M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 72L32 192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l288 0 0 72c0 9.6 5.7 18.2 14.5 22z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="flip-box-back align-item-center" style="background: #333448;">
+                                    <div class="inner" style="color: white;">
+                                        <ul style=" list-style-type: none; ">
+                                            <li><svg height="0.8em" viewBox="0 0 512 512" fill="white" style="padding: 2px">
+                                                    <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+                                                </svg>
+                                                Figma
+                                            </li>
+                                            <li><svg height="0.8em" viewBox="0 0 512 512" fill="white" style="padding: 2px">
+                                                    <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+                                                </svg>
+                                                Adobe After Effect
+                                            </li>
+                                            <li><svg height="0.8em" viewBox="0 0 512 512" fill="white" style="padding: 2px">
+                                                    <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+                                                </svg>
+                                                Filmora
+                                            </li>
+                                            <li><svg height="0.8em" viewBox="0 0 512 512" fill="white" style="padding: 2px">
+                                                    <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+                                                </svg>
+                                                Adobe Photoshop
+                                            </li>
+                                            <li><svg height="0.8em" viewBox="0 0 512 512" fill="white" style="padding: 2px">
+                                                    <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+                                                </svg>
+                                                Wordpress
+                                            </li>
+                                            <li><svg height="0.8em" viewBox="0 0 512 512" fill="white" style="padding: 2px">
+                                                    <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+                                                </svg>
+                                                HTML/CSS
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-container col-md">
+                        <div class="box-item" data-aos="fade-right">
+                            <div class="flip-box">
+                                <div class="flip-box-front text-center" style="background: #333448;">
+                                    <div class="inner" style="color: white">
+                                        <h3 class="flip-box-header">BASIC SKILLS</h3>
+                                        <svg class="flip-box-img" height="1.4em" viewBox="0 0 512 512" fill="white">
+                                            <path d="M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 72L32 192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l288 0 0 72c0 9.6 5.7 18.2 14.5 22z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="flip-box-back align-item-center" style="background: #333448;">
+                                    <div class="inner" style="color: white;">
+                                        <ul style=" list-style-type: none; ">
+                                            <li><svg height="0.8em" viewBox="0 0 512 512" fill="white" style="padding: 2px">
+                                                    <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+                                                </svg>
+                                                Machine Learning
+                                            </li>
+                                            <li><svg height="0.8em" viewBox="0 0 512 512" fill="white" style="padding: 2px">
+                                                    <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+                                                </svg>
+                                                Data Analysis
+                                            </li>
+                                            <li><svg height="0.8em" viewBox="0 0 512 512" fill="white" style="padding: 2px">
+                                                    <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+                                                </svg>
+                                                Data Visualization
+                                            </li>
+                                            <li><svg height="0.8em" viewBox="0 0 512 512" fill="white" style="padding: 2px">
+                                                    <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+                                                </svg>
+                                                Deep Learning
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-item" data-aos="fade-down">
+                            <div class="flip-box">
+                                <div class="flip-box-front text-center" style="background: #333448;;">
+                                    <div class="inner" style="color: white">
+                                        <h3 class="flip-box-header">LIBRARY MOST USED</h3>
+                                        <svg class="flip-box-img" height="1.4em" viewBox="0 0 512 512" fill="white">
+                                            <path d="M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 72L32 192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l288 0 0 72c0 9.6 5.7 18.2 14.5 22z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="flip-box-back align-item-center" style="background: #333448;">
+                                    <div class="inner" style="color: white;">
+                                        <ul style="list-style-type: none; ">
+                                            <li><svg height="0.8em" viewBox="0 0 512 512" fill="white" style="padding: 2px">
+                                                    <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+                                                </svg>
+                                                Pandas
+                                            </li>
+                                            <li><svg height="0.8em" viewBox="0 0 512 512" fill="white" style="padding: 2px">
+                                                    <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+                                                </svg>
+                                                Numpy
+                                            </li>
+                                            <li><svg height="0.8em" viewBox="0 0 512 512" fill="white" style="padding: 2px">
+                                                    <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+                                                </svg>
+                                                Matplotlib
+                                            </li>
+                                            <li><svg height="0.8em" viewBox="0 0 512 512" fill="white" style="padding: 2px">
+                                                    <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+                                                </svg>
+                                                Seaborn
+                                            </li>
+                                            <li><svg height="0.8em" viewBox="0 0 512 512" fill="white" style="padding: 2px">
+                                                    <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+                                                </svg>
+                                                Scikit-Learn
+                                            </li>
+                                            <li><svg height="0.8em" viewBox="0 0 512 512" fill="white" style="padding: 2px">
+                                                    <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+                                                </svg>
+                                                Tensorflow
+                                            </li>
+                                            <li><svg height="0.8em" viewBox="0 0 512 512" fill="white" style="padding: 2px">
+                                                    <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+                                                </svg>
+                                                Keras
+                                            </li>
+                                            <li><svg height="0.8em" viewBox="0 0 512 512" fill="white" style="padding: 2px">
+                                                    <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+                                                </svg>
+                                                Plotly
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-item" data-aos="fade-left">
+                            <div class="flip-box">
+                                <div class="flip-box-front text-center" style="background: #333448;"">
+                                    <div class="inner" style="color: white">
+                                        <h3 class="flip-box-header">OTHER SKILLS</h3>
+                                        <svg class="flip-box-img" height="1.4em" viewBox="0 0 512 512" fill="white">
+                                            <path d="M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 72L32 192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l288 0 0 72c0 9.6 5.7 18.2 14.5 22z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="flip-box-back align-item-center" style="background: #333448;">
+                                    <div class="inner" style="color: white;">
+                                        <ul style=" list-style-type: none; ">
+                                            <li><svg height="0.8em" viewBox="0 0 512 512" fill="white" style="padding: 2px">
+                                                    <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+                                                </svg>
+                                                Problem Solving
+                                            </li>
+                                            <li><svg height="0.8em" viewBox="0 0 512 512" fill="white" style="padding: 2px">
+                                                    <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+                                                </svg>
+                                                Math and Logic
+                                            </li>
+                                            <li><svg height="0.8em" viewBox="0 0 512 512" fill="white" style="padding: 2px">
+                                                    <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+                                                </svg>
+                                                Statistics and Probability
+                                            </li>
+                                            <li><svg height="0.8em" viewBox="0 0 512 512" fill="white" style="padding: 2px">
+                                                    <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+                                                </svg>
+                                                Microsoft and Google Tools
+                                            </li>
+                                            <li><svg height="0.8em" viewBox="0 0 512 512" fill="white" style="padding: 2px">
+                                                    <path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z"/>
+                                                </svg>
+                                                Basic Azure
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <img class="doublecircle" src="assets/double circle.png" alt="">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-md">
+                    <div class="contact-heading" data-aos="fade-right">
+                        <div class="contact-desc">You have an interesting idea?</div>
+                        <div class="contact-text">JUST CONTACT ME</div>
+                        <div class="contact-line"></div>
+                    </div>
+                    <div class="contact-info row" data-aos="fade-right">
+                        <div class="col-md-6">
+                            <div class="contact-title">EMAIL</div>
+                            <div class="contact-sub-info">akmalm2003@gmail.com</div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="contact-title">INSTAGRAM</div>
+                            <a href="https://www.instagram.com/akmal_mzkki/" target="_blank" class="contact-sub-info">@akmal_mzkki</a>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="contact-title">GITHUB</div>
+                            <a href="https://github.com/akmalmzkki/" target="_blank" class="contact-sub-info">akmalmzkki</a>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="contact-title">LINKED-IN</div>
+                            <a href="https://www.linkedin.com/in/akmal-muzakki-0116a3219/" target="_blank" class="contact-sub-info">Akmal Muzakki</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md d-flex justify-content-center">
+                    <div class="contact-box" data-aos="fade-left">
+                        <form target="_blank" action="https://formsubmit.co/akmalm2003@gmail.com" method="POST" id="mailer">
+                        <!-- <form method="POST" id="contact-form"> -->
+                            <div class="contact-inputs">
+                                <label for="name" class="contact-label">NAME</label>
+                                <br>
+                                <input type="text" class="contact-input" name="name" id="name" placeholder="Your name..." required>
+                                <label for="email" class="contact-label">EMAIL</label>
+                                <br>
+                                <input type="email" class="contact-input" name="email" id="email" placeholder="Your email..." required>
+                                <br>
+                                <label for="message" class="contact-label">MESSAGE</label>
+                                <br>
+                                <textarea class="contact-input" name="message" id="message" cols="30" rows="10" placeholder="Your message..." required></textarea>
+                            </div>
+                            <div class="contact-buttons d-flex justify-content-end">
+                                <button type="reset" class="btn btn-dark reset-button">RESET</button>
+                                <button type="submit" class="btn btn-light send-button" name="submit">SEND
+                                    <svg id="btn-arrow" width="28" height="12" viewBox="0 0 30 17" fill="none">
+                                        <path d="M0.5 9.5H28.5M28.5 9.5L20 1M28.5 9.5L21 16.5" stroke="#28293D"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Contact-->
+
+    <!-- Copyright Footer -->
+    <footer id="footer">
+        <p class="copyright-footer d-flex align-items-center justify-content-center text-center">© Copyright 2022 - Akmal Muzakki</p>
+    </footer>
+    <!-- End of Copyright Footer -->
+
+    <!-- Library JS -->
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/pooper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/sweetalert.js"></script>
+    <script src="static/js/aos.js"></script>
+    <script src="https://kit.fontawesome.com/2f62962ba9.js" crossorigin="anonymous"></script>
+    <!-- My JS-->
+    <script src="static/js/script.js"></script>
+    <!-- <script src="static/js/mailer.js"></script> -->
+</body>
+</html>
