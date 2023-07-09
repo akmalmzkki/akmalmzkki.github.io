@@ -178,12 +178,13 @@ nav.scrolled {
     margin-left: 18px;
 }
 .gigachad1 {
-    width: 400px;
+    width: 70%;
     height: auto;
     display: block;
     object-fit: cover;
     margin-top: 6rem;
     margin-left: auto;
+    /* margin-right: auto; */
     z-index: -1;
 }
 /* .porch-info {
@@ -883,6 +884,9 @@ nav.scrolled {
     }
     .doublerectangle {
         display: none;
+    }
+    .gigachad1 {
+        margin-right: auto;
     }
 }
 @media (max-width: 575.98px) {
