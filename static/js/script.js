@@ -70,5 +70,5 @@ if (window.location.protocol !== 'http:' && window.location.protocol !== 'https:
 }
 
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    alert('Silakan kunjungi website ini melalui perangkat desktop untuk pengalaman terbaik.');
+    alert('Oiya gais, kalo mau liat web ini, disaranin buka di laptop atau komputer ya, biar enak liatnya😁.');
 }
