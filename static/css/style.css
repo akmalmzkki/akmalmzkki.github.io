@@ -303,8 +303,8 @@ nav.scrolled {
 }
 .dsc {
     background: rgba(45, 46, 51, 0.7);
-    border-radius: 10px;
     padding: 20px;
+    font-size: 13px;
 }
 .gigachad2 {
     margin-right: auto;
@@ -838,12 +838,18 @@ nav.scrolled {
         justify-content: center;
         align-items: center;
     }
-    .about-dsc {
+    /* .about-dsc {
         margin-left: 10px;
         margin-right: 10px;
-    }
+    } */
     .porch-desc {
         width: 100%;
+    }
+    .porch-heading {
+        font-size: 40px;
+    }
+    .porch-desc {
+        font-size: 13px;
     }
     .about-sosmed {
         margin-top: 20px;
