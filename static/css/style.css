@@ -178,13 +178,13 @@ nav.scrolled {
     margin-left: 18px;
 }
 .gigachad1 {
-    width: 70%;
+    width: 400px;
     height: auto;
     display: block;
     object-fit: cover;
     margin-top: 6rem;
     margin-left: auto;
-    /* margin-right: auto; */
+    margin-right: auto;
     z-index: -1;
 }
 /* .porch-info {
@@ -308,7 +308,8 @@ nav.scrolled {
     font-size: 13px;
 }
 .gigachad2 {
-    margin-right: auto;
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 .loader-wrapper {
     width: 300px;
@@ -831,6 +832,9 @@ nav.scrolled {
         justify-content: center;
         align-items: center;
     }
+    .gigachad1 {
+        width: 350px;
+    }
     .gigachad2 {
         height: auto;
         display: flex;
@@ -839,6 +843,8 @@ nav.scrolled {
         z-index: -1;
         justify-content: center;
         align-items: center;
+        margin-right: auto;
+        margin-left: auto;
     }
     /* .about-dsc {
         margin-left: 10px;
@@ -884,9 +890,6 @@ nav.scrolled {
     }
     .doublerectangle {
         display: none;
-    }
-    .gigachad1 {
-        margin-right: auto;
     }
 }
 @media (max-width: 575.98px) {
