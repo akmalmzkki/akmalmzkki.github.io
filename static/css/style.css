@@ -891,6 +891,11 @@ nav.scrolled {
     .doublerectangle {
         display: none;
     }
+    .homebg {
+        /* rotate image 90 derajat*/
+        transform: rotate(90deg);
+        width: 100%;
+    }
 }
 @media (max-width: 575.98px) {
     .homebg {
