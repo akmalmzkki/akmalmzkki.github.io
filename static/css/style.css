@@ -822,6 +822,7 @@ nav.scrolled {
 @media (max-width: 767.98px) {
     .summary {
         order: 2 !important;
+        margin-top: 15%;
     }
     .mypict {
         order: 1 !important;
