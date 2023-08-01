@@ -66,17 +66,8 @@ $(document).ready(function() {
 });
 
 $('.card-skill').hover(function() {
-    if($(this).hasClass('active')) {
-        $('.card-skill .bottom-skill').slideUp(function() {
-            $('.card-skill').removeClass('active');
-        });
-    } else {
-        // $('.card-skill .bottom-skill').slideUp(function() {
-        //     $('.card-skill').removeClass('active');
-        // });
-        $(this).addClass('active');
-        $(this).find('.bottom-skill').slideDown();
-    }
+    $(this).find('.bottom-skill').stop().slideToggle();
+    $(this).find('bottom-skill').slideUp();
 });
 
 document.addEventListener('DOMContentLoaded', function() {
