@@ -65,6 +65,42 @@ $(document).ready(function() {
     );
 });
 
+$('.card-skill').hover(function() {
+    if($(this).hasClass('active')) {
+        $('.card-skill .bottom-skill').slideUp(function() {
+            $('.card-skill').removeClass('active');
+        });
+    } else {
+        // $('.card-skill .bottom-skill').slideUp(function() {
+        //     $('.card-skill').removeClass('active');
+        // });
+        $(this).addClass('active');
+        $(this).find('.bottom-skill').slideDown();
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('.show-description');
+
+    buttons.forEach(button => {
+        button.addEventListener("click", function() {
+            const cardSkill = this.closest('.card-skill');
+            const figcaption = cardSkill.querySelector('figcaption');
+            figcaption.style.display = (figcaption.style.display == 'block') ? 'none' : 'block';
+        })
+    })
+    
+    const hideButtons = document.querySelectorAll('.hide-description');
+    
+    hideButtons.forEach(button => {
+        button.addEventListener("click", function() {
+            const cardSkill = this.closest('.card-skill');
+            const figcaption = cardSkill.querySelector('figcaption');
+            figcaption.style.display = (figcaption.style.display == 'block') ? 'none' : 'block';
+        })
+    })
+});
+
 if (window.location.protocol !== 'http:' && window.location.protocol !== 'https:') {
     window.location.href = 'alert.html';
 }
