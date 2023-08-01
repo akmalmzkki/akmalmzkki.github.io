@@ -892,7 +892,6 @@ nav.scrolled {
         display: none;
     }
     .homebg {
-        /* rotate image 90 derajat*/
         transform: rotate(90deg);
         width: 100%;
     }
