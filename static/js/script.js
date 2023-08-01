@@ -20,35 +20,39 @@ $(window).scroll(function(){
     }
 });
 
-const btndark = $(".btn-dark")
-const btnlight = $(".btn-light")
-const projectbtn = $(".project-btn")
-
-btndark.hover(function() {
-    $(this).children("svg").children("path").attr("stroke", "#28293D")
-    $(this).children("svg").attr("fill", "#28293D")
-
-});
-btndark.mouseout(function() {
-    $(this).children("svg").children("path").attr("stroke","white")
-    $(this).children("svg").attr("fill", "white")
-
-});
-
-btnlight.hover(function() {
-    $(this).children("svg").children("path").attr("stroke","white")
-});
-btnlight.mouseout(function() {
-    $(this).children("svg").children("path").attr("stroke","#28293D")
-});
-
-projectbtn.hover(function() {
-    $(this).children("svg").children("path").attr("stroke","#28293D")
-});
-projectbtn.mouseout(function() {
-    $(this).children("svg").children("path").attr("stroke","white")
-});
-
+function setupButtonHover() {
+    const btndark = $(".btn-dark");
+    const btnlight = $(".btn-light");
+    const projectbtn = $(".project-btn");
+  
+    btndark.hover(function() {
+        $(this).children("svg").children("path").attr("stroke", "#28293D");
+        $(this).children("svg").attr("fill", "#28293D");
+    });
+  
+    btndark.mouseout(function() {
+        $(this).children("svg").children("path").attr("stroke", "white");
+        $(this).children("svg").attr("fill", "white");
+    });
+  
+    btnlight.hover(function() {
+        $(this).children("svg").children("path").attr("stroke", "white");
+    });
+  
+    btnlight.mouseout(function() {
+        $(this).children("svg").children("path").attr("stroke", "#28293D");
+    });
+  
+    projectbtn.hover(function() {
+        $(this).children("svg").children("path").attr("stroke", "#28293D");
+    });
+  
+    projectbtn.mouseout(function() {
+        $(this).children("svg").children("path").attr("stroke", "white");
+    });
+}
+setupButtonHover();
+  
 $(".navbar-toggler").click(function() {
     $(this).toggleClass("clicked");
     $(".navbar-nav").toggleClass("show");
