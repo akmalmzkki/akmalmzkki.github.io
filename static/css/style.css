@@ -999,8 +999,8 @@ figcaption button:hover {
         display: none;
     }
     .card-skill {
-        height: 350px;
-        width: 250px;
+        height: 100%;
+        width: 100%;
     }
     .card-skill .image-skill {
         height: 300px;
@@ -1080,7 +1080,7 @@ figcaption button:hover {
         margin-top: 40px;
     }
     .project-box {
-        width: 80%;
+        width: 70%;
         margin-bottom: 45px;
     }
     .box-item {
@@ -1100,8 +1100,8 @@ figcaption button:hover {
         width: 100%;
     }
     .card-skill {
-        height: 80%;
-        width: 80%;
+        height: 70%;
+        width: 70%;
     }
     .card-skill .image-skill {
         height: 400px;
