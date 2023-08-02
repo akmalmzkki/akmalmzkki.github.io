@@ -71,7 +71,7 @@ $(document).ready(function() {
 
 $('.card-skill').hover(function() {
     $(this).find('.bottom-skill').stop().slideToggle();
-    $(this).find('bottom-skill').slideUp();
+    // $(this).find('bottom-skill').slideUp();
 });
 
 document.addEventListener('DOMContentLoaded', function() {
