@@ -40,15 +40,180 @@ section#contact {
     padding-top: 15vh;
     padding-bottom: 12vh;
 }
-.homebg {
+
+/* Background */
+.background {
     position: fixed;
-    z-index: -999;
-    width: 100%;
-    left: 0;
-    right: 0;
+    z-index: -3;
     top: 0;
-    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.glowing {
+    position: relative;
+    min-width: 420px;
+    height: 420px;
     margin: auto;
+    transform-origin: right;
+    /* animation: colorChange 2s linear infinite; */
+}
+/* .glowing:nth-child(odd) {
+    transform-origin: left;
+} */
+@keyframes colorChange {
+    0% {
+        filter: hue-rotate(0deg);
+        transform: rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(180deg);
+        transform: rotate(180deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+/* .glowing span {
+    position: absolute;
+    top: calc(80px * var(--i));
+    left: calc(80px * var(--i));
+    bottom: calc(80px * var(--i));
+    right: calc(80px * var(--i));
+} */
+.glowing span::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #f00;
+    border-radius: 50%;
+}
+.glowing span:nth-child(3n + 1)::before {
+    background: rgba(134,255,0,1);
+    box-shadow: 0 0 20px rgba(134,255,0,1),
+    0 0 40px rgba(134,255,0,1),
+    0 0 60px rgba(134,255,0,1),
+    0 0 80px rgba(134,255,0,1),
+    0 0 0 8px rgba(134,255,0,.1);
+}
+.glowing span:nth-child(3n + 2)::before {
+    background: rgba(255,214,0,1);
+    box-shadow: 0 0 20px rgba(255,214,0,1),
+    0 0 40px rgba(255,214,0,1),
+    0 0 60px rgba(255,214,0,1),
+    0 0 80px rgba(255,214,0,1),
+    0 0 0 8px rgba(255,214,0,.1);
+}
+.glowing span:nth-child(3n + 3)::before {
+    background: rgba(0,226,255,1);
+    box-shadow: 0 0 20px rgba(0,226,255,1),
+    0 0 40px rgba(0,226,255,1),
+    0 0 60px rgba(0,226,255,1),
+    0 0 80px rgba(0,226,255,1),
+    0 0 0 8px rgba(0,226,255,.1);
+}
+.glowing span:nth-child(3n + 4)::before {
+    background: rgba(235, 64, 84, 1);
+    box-shadow: 0 0 20px rgba(235, 64, 84, 1),
+    0 0 40px rgba(235, 64, 84, 1),
+    0 0 60px rgba(235, 64, 84, 1),
+    0 0 80px rgba(235, 64, 84, 1),
+    0 0 0 8px rgba(0,226,255,.1);
+}
+/* hijau */
+.glowing span:nth-child(3n + 1) { 
+    position: absolute;
+    animation: animate-shakes-1 7s alternate infinite;
+    top: calc(120px * var(--i));
+}
+/* kuning */
+.glowing span:nth-child(3n + 2) {
+    position: absolute;
+    animation: animate-shakes-2 7s alternate infinite;
+    left: calc(90px * var(--i));
+    top: calc(30px * var(--i));
+}
+/* biru */
+.glowing span:nth-child(3n + 3) {
+    position: absolute;
+    animation: animate-shakes-3 7s alternate infinite; 
+    right: calc(10px * var(--i));
+    top: calc(50px * var(--i));
+}
+/* merah */
+.glowing span:nth-child(3n + 4) {
+    position: absolute;
+    animation: animate-shakes-4 7s alternate infinite; 
+    right: calc(40px * var(--i));
+    top: calc(70px * var(--i));
+}
+/* @keyframes animate {
+    0% {
+        transform: rotate(180deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes animate-reverse {
+    0% {
+        transform: rotate(360deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+} */
+@keyframes animate-shakes-1 {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translate(-2px, -2px);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translate(2px, 2px);
+    }
+}
+@keyframes animate-shakes-2 {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    10%, 40%, 70% {
+      transform: translate(2px, 2px);
+    }
+    20%, 50%, 80% {
+      transform: translate(-2px, -2px);
+    }
+}
+@keyframes animate-shakes-3 {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translate(2px, 2px);
+    }
+    20%, 40%, 60%, 8% {
+        transform: translate(-2px, -2px);
+    }
+}
+@keyframes animate-shakes-4 {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    10%, 40%, 70% {
+      transform: translate(-2px, -2px);
+    }
+    20%, 50%, 80% {
+      transform: translate(2px, 2px);
+    }
 }
 
 /* Navbar */
