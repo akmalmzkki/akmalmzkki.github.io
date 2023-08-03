@@ -362,6 +362,21 @@ nav.scrolled {
     margin-left: auto;
     margin-right: auto;
     z-index: -1;
+    animation: animate-shakes 20s infinite;
+}
+@keyframes animate-shakes {
+    0%, 100% {
+      transform: translateY(-10);
+    }
+    10%, 40%, 70% {
+      transform: translateX(-10px);
+    }
+    20%, 50%, 80% {
+      transform: translateY(10px);
+    }
+    30%, 60%, 90% {
+      transform: translateX(10px);
+    }
 }
 /* .porch-info {
     position: absolute;
@@ -488,8 +503,8 @@ nav.scrolled {
     margin-left: 2rem;
 }
 .loader-wrapper {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     /* margin-right: auto; */
 }
 .loader {
