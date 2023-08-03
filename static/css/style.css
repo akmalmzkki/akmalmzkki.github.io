@@ -763,6 +763,10 @@ nav.scrolled {
     font-size: 15px;
     color: #FFFFFF;
     font-family: 'Questrial';
+    word-spacing: 5px;
+}
+.contact-title i {
+    font-size: 11px;
 }
 .contact-info  {
     margin-top: 30px;
