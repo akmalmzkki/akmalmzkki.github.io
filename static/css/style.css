@@ -362,10 +362,10 @@ nav.scrolled {
     margin-left: auto;
     margin-right: auto;
     z-index: -1;
-    animation: animate-shakes 20s infinite;
+    animation: animate-shakes 10s ease-in-out infinite;
 }
 @keyframes animate-shakes {
-    0%, 100% {
+    /* 0%, 100% {
       transform: translateY(-10);
     }
     10%, 40%, 70% {
@@ -376,6 +376,12 @@ nav.scrolled {
     }
     30%, 60%, 90% {
       transform: translateX(10px);
+    } */
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(18px)
     }
 }
 /* .porch-info {
