@@ -250,6 +250,7 @@ nav.scrolled {
     margin-left: 5px;
     margin-bottom: 3.5px;
     transition: .5s transform ease;
+    transform: rotate(-90deg);
 }
 .svg-dropdown-left {
     margin-right: 20px;
@@ -284,9 +285,6 @@ nav.scrolled {
     color: white;
     text-decoration: none;
     display: block;
-}
-.svg-dropdown:hover {
-    transform: rotate(-90deg);
 }
 
 /* Home */

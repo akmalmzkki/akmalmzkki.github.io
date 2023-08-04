@@ -66,9 +66,11 @@ $(document).click(function (e) {
 $('.nav-link').hover(
     function () {
         $(this).find(".dropdown-content").slideDown(200);
+        $(this).find('.svg-dropdown').css('transform', 'rotate(0deg)');
     }, 
     function () {
         $(this).find(".dropdown-content").slideUp(200);
+        $(this).find('.svg-dropdown').css('transform', 'rotate(-90deg)');
     }
 );
 
