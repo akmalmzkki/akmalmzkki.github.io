@@ -3,8 +3,8 @@ AOS.init();
 
 // Navbar smooth scroll
 $('a').click(function (e) { 
-    e.preventDefault();
     if (this.hash !== "") {
+        e.preventDefault();
         let hash = this.hash;
         $('html, body').animate({
             scrollTop: $(hash).offset().top
