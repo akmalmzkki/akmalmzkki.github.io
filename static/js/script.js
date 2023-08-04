@@ -56,7 +56,7 @@ $('.project-btn').hover(
 );
 
 // Bring up navbar-toggler
-$(document).click(function (e) { 
+$('.navbar-toggler').click(function (e) { 
     e.preventDefault();
     $(this).toggleClass("clicked");
     $(".navbar-nav").toggleClass("show");

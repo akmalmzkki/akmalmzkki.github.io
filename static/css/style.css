@@ -1209,6 +1209,7 @@ figcaption button:hover {
     .navbar-nav {
         flex-direction: column;
         align-items: stretch;
+        /* transition: .5s filter ease, .5s background-filter ease, .5s background ease; */
     }
     .navbar-nav {
         display: flex;
@@ -1223,5 +1224,6 @@ figcaption button:hover {
     }
     .navbar-nav.show {
         opacity: 1;
+        transition: .5s filter ease, .5s background-filter ease, .5s background ease;
     }
 }
