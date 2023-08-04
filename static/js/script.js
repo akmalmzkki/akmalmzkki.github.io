@@ -1,99 +1,100 @@
+// AOS Initialization
 AOS.init();
 
-$("a").on('click', function(event) {
+// Navbar smooth scroll
+$('a').click(function (e) { 
+    e.preventDefault();
     if (this.hash !== "") {
-        event.preventDefault();
         let hash = this.hash;
         $('html, body').animate({
             scrollTop: $(hash).offset().top
-        }, 800, function(){
+        }, 800, function() {
             window.location.hash = hash;
         });
-    }
+    };
 });
 
-$(window).scroll(function(){
-    if ($(window).scrollTop() > screenTop) {
+// Activate navbar background when scrolled
+$(window).scroll(function () { 
+    if ($(document).scrollTop() > screenTop) {
         $("nav").addClass("scrolled");
     } else {
-        $("nav").removeClass("scrolled");
+        $("nav").removeClass("scrolled");    
     }
 });
 
-function setupButtonHover() {
-    const btndark = $(".btn-dark");
-    const btnlight = $(".btn-light");
-    const projectbtn = $(".project-btn");
-  
-    btndark.hover(function() {
+// Hover btn-dark
+$('.btn-dark').hover(
+    function () {
         $(this).children("svg").children("path").attr("stroke", "#28293D");
         $(this).children("svg").attr("fill", "#28293D");
-    });
-  
-    btndark.mouseout(function() {
+    }, 
+    function () {
         $(this).children("svg").children("path").attr("stroke", "white");
         $(this).children("svg").attr("fill", "white");
-    });
-  
-    btnlight.hover(function() {
+    }
+);
+
+// Hover btn-light
+$('.btn-light').hover(
+    function () {
         $(this).children("svg").children("path").attr("stroke", "white");
-    });
-  
-    btnlight.mouseout(function() {
+    }, 
+    function () {
         $(this).children("svg").children("path").attr("stroke", "#28293D");
-    });
-  
-    projectbtn.hover(function() {
+    }
+);
+
+// Hover project-btn
+$('.project-btn').hover(
+    function () {
         $(this).children("svg").children("path").attr("stroke", "#28293D");
-    });
-  
-    projectbtn.mouseout(function() {
+    }, 
+    function () {
         $(this).children("svg").children("path").attr("stroke", "white");
-    });
-}
-setupButtonHover();
-  
-$(".navbar-toggler").click(function() {
+    }
+);
+
+// Bring up navbar-toggler
+$(document).click(function (e) { 
+    e.preventDefault();
     $(this).toggleClass("clicked");
     $(".navbar-nav").toggleClass("show");
 });
 
+// Bring up dropdown-content
+$('.nav-link').hover(
+    function () {
+        $(this).find(".dropdown-content").slideDown(200);
+    }, 
+    function () {
+        $(this).find(".dropdown-content").slideUp(200);
+    }
+);
+
+// Bring up bottom-skill
+$('.card-skill').hover(
+    function () {
+        $(this).find(".bottom-skill").slideDown(500);
+    }, 
+    function () {
+        $(this).find(".bottom-skill").slideUp(500);
+    }
+);
+
+// Add listener from card-skill to figcaption when button clicked
 $(document).ready(function() {
-    $(".nav-link").hover(
-        function() {
-            $(this).find(".dropdown-content").slideDown(200);
-        },
-        function() {
-            $(this).find(".dropdown-content").slideUp(200);
-        }
-    );
-});
+    $('.show-description').click(function() {
+        const cardSkill = $(this).closest('.card-skill');
+        const figcaption = cardSkill.find('figcaption');
+        figcaption.toggle();
+    });
 
-$('.card-skill').hover(function() {
-    $(this).find('.bottom-skill').stop().slideToggle();
-    // $(this).find('bottom-skill').slideUp();
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-    const buttons = document.querySelectorAll('.show-description');
-
-    buttons.forEach(button => {
-        button.addEventListener("click", function() {
-            const cardSkill = this.closest('.card-skill');
-            const figcaption = cardSkill.querySelector('figcaption');
-            figcaption.style.display = (figcaption.style.display == 'block') ? 'none' : 'block';
-        })
-    })
-    
-    const hideButtons = document.querySelectorAll('.hide-description');
-    
-    hideButtons.forEach(button => {
-        button.addEventListener("click", function() {
-            const cardSkill = this.closest('.card-skill');
-            const figcaption = cardSkill.querySelector('figcaption');
-            figcaption.style.display = (figcaption.style.display == 'block') ? 'none' : 'block';
-        })
-    })
+    $('.hide-description').click(function() {
+        const cardSkill = $(this).closest('.card-skill');
+        const figcaption = cardSkill.find('figcaption');
+        figcaption.toggle();
+    });
 });
 
 if (window.location.protocol !== 'http:' && window.location.protocol !== 'https:') {

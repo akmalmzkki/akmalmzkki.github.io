@@ -381,7 +381,7 @@ nav.scrolled {
         transform: translateY(0px);
     }
     50% {
-        transform: translateY(18px)
+        transform: translateY(-18px)
     }
 }
 /* .porch-info {
