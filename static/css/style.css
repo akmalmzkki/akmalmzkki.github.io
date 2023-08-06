@@ -16,8 +16,7 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    place-items: center;
 }
 section {
     overflow: hidden;
@@ -31,7 +30,6 @@ section#skills, section#about, section#qualification, section#works, section#con
 section#home {
     height: fit-content;
     padding-top: 10vh;
-    /* padding-left: 10vh; */
 }
 section#works, section#project {
     padding-top: 10vh;
@@ -86,13 +84,6 @@ section#contact {
         transform: rotate(360deg);
     }
 }
-/* .glowing span {
-    position: absolute;
-    top: calc(80px * var(--i));
-    left: calc(80px * var(--i));
-    bottom: calc(80px * var(--i));
-    right: calc(80px * var(--i));
-} */
 .glowing span::before {
     content: "";
     position: absolute;
@@ -160,28 +151,6 @@ section#contact {
     right: calc(40px * var(--i));
     top: calc(70px * var(--i));
 }
-/* @keyframes animate {
-    0% {
-        transform: rotate(180deg);
-    }
-    50% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-@keyframes animate-reverse {
-    0% {
-        transform: rotate(360deg);
-    }
-    50% {
-        transform: rotate(180deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
-} */
 @keyframes animate-shakes-1 {
     0%, 100% {
       transform: translate(0, 0);
@@ -231,6 +200,9 @@ section#contact {
 nav {
     transition: .5s filter ease, .5s background-filter ease, .5s background ease;
 }
+.navbar-nav {
+    margin: 0;
+}
 nav.scrolled {
     background: rgba(45, 46, 51, 0.7);
     backdrop-filter: blur(10px);
@@ -238,16 +210,15 @@ nav.scrolled {
 }
 .navbar-brand {
     font-family: 'Questrial';
-    letter-spacing: 4px;
+    letter-spacing: 7px;
     font-size: 2.5rem;
+    margin: 0;
 }
 .nav-link {
     font-family: 'Questrial';
-    margin-left: 15px;
     font-size: 17px;
 }
 .svg-dropdown {
-    margin-left: 5px;
     margin-bottom: 3.5px;
     transition: .5s transform ease;
     transform: rotate(-90deg);
@@ -263,13 +234,16 @@ nav.scrolled {
     color: rgba(255, 255, 255, 0.7);
     transform: translateY(-2px);
 }
+.navbar-toggler:hover {
+    transform: translateY(-2px);
+    color : rgba(255, 255, 255, 0.7);
+}
 .navbar-toggler {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 .navbar-toggler.clicked {
     background-color: #28293D;
     transform: rotate(180deg);
-    transition: .5s filter ease, .5s background-filter ease, .5s background ease;
 }
 .dropdown-content {
     display: none;
@@ -1210,11 +1184,8 @@ figcaption button:hover {
     .navbar-nav {
         flex-direction: column;
         align-items: stretch;
-    }
-    .navbar-nav {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        place-items: center;
         opacity: 0;
         transition: opacity 0.3s ease;
     }
