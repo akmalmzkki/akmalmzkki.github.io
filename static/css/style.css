@@ -250,16 +250,19 @@ nav.scrolled {
     position: absolute;
     min-width: 200px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
-    padding: 10px 10px;
+    padding: 10px;
     z-index: 1;
     list-style-type: none;
     background: rgba(45, 46, 51, 0.7);
     backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    margin-top: 10px;
 }
 .dropdown-content a {
     color: white;
     text-decoration: none;
     display: block;
+    margin-left: 1rem;
 }
 
 /* Home */
@@ -1190,7 +1193,7 @@ figcaption button:hover {
         transition: opacity 0.3s ease;
     }
     .navbar-nav .nav-link {
-        text-align: center;
+        /* text-align: center; */
         margin-bottom: 5px;
     }
     .navbar-nav.show {
