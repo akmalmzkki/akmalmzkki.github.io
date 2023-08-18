@@ -114,7 +114,7 @@ if (window.location.protocol !== 'http:' && window.location.protocol !== 'https:
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     Swal.fire({
         icon: 'info',
-        title: 'Oops...',
+        title: 'Hmmm...',
         text: 'Disaranin buka web ini di laptop atau komputer ya, biar enak diliatnya😁.',
     })
 }
