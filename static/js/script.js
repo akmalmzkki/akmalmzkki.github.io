@@ -99,10 +99,22 @@ $(document).ready(function() {
     });
 });
 
+// Check if protocol is http or https, then show error
 if (window.location.protocol !== 'http:' && window.location.protocol !== 'https:') {
-    window.location.href = 'alert.html';
+    Swal.fire({
+        icon: 'error',
+        title: 'Protocol Error',
+        text: 'Pake live server dulu buat buka website ini yakk 😁!',
+    }).then(function () {
+        window.close();
+    });
 }
 
+// Check if user is using mobile device, then show info
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    alert('Oiya gais, kalo mau liat web ini, disaranin buka di laptop atau komputer ya, biar enak liatnya😁.');
+    Swal.fire({
+        icon: 'info',
+        title: 'Oops...',
+        text: 'Disaranin buka web ini di laptop atau komputer ya, biar enak diliatnya😁.',
+    })
 }
