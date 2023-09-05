@@ -4,7 +4,7 @@
 
 html {
     scroll-behavior: smooth !important;
-}
+}   
 body {
     margin: 0;
     padding: 0;
@@ -47,8 +47,6 @@ section#contact {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center;
 }
 .background {
     position: fixed;
@@ -67,9 +65,7 @@ section#contact {
     transform-origin: right;
     /* animation: colorChange 2s linear infinite; */
 }
-/* .glowing:nth-child(odd) {
-    transform-origin: left;
-} */
+
 @keyframes colorChange {
     0% {
         filter: hue-rotate(0deg);
@@ -265,32 +261,7 @@ nav.scrolled {
     margin-left: 1rem;
 }
 
-/* Home */
-.summary {
-    margin-top: 25vh;
-    margin-bottom: 10vh;
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 17px;
-    line-height: 1.5em;
-    letter-spacing: 1px;
-}
-.porch-heading {
-    font-size: 50px;
-    color: #ffffff !important;
-    font-family: 'Questrial';
-    line-height: 1em;
-    letter-spacing: 2px;
-}
-.porch-desc {
-    margin-top: 2rem;
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 14px;
-    font-family: 'Poppins';
-}
-.porch-buttons {
-    margin-top: 2.5rem;
-    font-family: 'Poppins';
-}
+/* Button */
 .btn {
     font-size: 15px;
     height: 45px;
@@ -329,30 +300,50 @@ nav.scrolled {
 .btn-light svg {
     margin-left: 18px;
 }
+
+/* Home */
+.home {
+    margin-top: 8rem;
+}
+.summary {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 17px;
+    line-height: 1.5em;
+    width: 90%;
+}
+.porch-heading {
+    font-size: 50px;
+    color: #ffffff !important;
+    font-family: 'Questrial';
+    line-height: 1em;
+    letter-spacing: 2px;
+}
+.porch-desc {
+    margin-top: 2rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    font-family: 'Poppins';
+    padding: 20px;
+    background: rgba(45, 46, 51, 0.7);
+    text-align: justify;
+}
+.porch-buttons {
+    margin-top: 2.5rem;
+    font-family: 'Poppins';
+}
 .gigachad1 {
     width: 400px;
     height: auto;
-    display: block;
-    object-fit: cover;
-    margin-top: 6rem;
-    margin-left: auto;
-    margin-right: auto;
     z-index: -1;
     animation: animate-shakes 10s ease-in-out infinite;
 }
+.doublerectangle {
+    z-index: -1;
+    width: 380px;
+    position: absolute;
+    left: 65%;
+}
 @keyframes animate-shakes {
-    /* 0%, 100% {
-      transform: translateY(-10);
-    }
-    10%, 40%, 70% {
-      transform: translateX(-10px);
-    }
-    20%, 50%, 80% {
-      transform: translateY(10px);
-    }
-    30%, 60%, 90% {
-      transform: translateX(10px);
-    } */
     0%, 100% {
         transform: translateY(0px);
     }
@@ -360,48 +351,20 @@ nav.scrolled {
         transform: translateY(-18px)
     }
 }
-/* .porch-info {
-    position: absolute;
-    font-family: 'Questrial';
-    line-height: 15px;
-    bottom: 0;
-    margin-bottom: 35px;
-}
-.porch-info-num {
-    font-size: 30px;
-    color: rgba(255, 255, 255, 0.85);
-    margin-right: 11px;
-}
-.porch-info-num span {
-    font-size: 25px;
-}
-.porch-info-desc {
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.5);
-}
-.porch-sub-info.info1 {
-    padding-right: 25px;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-.porch-sub-info.info2 {
-    padding-right: 25px;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-.porch-sub-info.info3 {
-    padding-right: 25px;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-} */
 
 /* About */
+.about {
+    margin-top: 5rem;
+}
 .about-text {
     color: #FFFFFF;
     font-family: 'Questrial';
     letter-spacing: 1px;
     font-size: 30px;
     line-height: 35px;
+}
+.about-dsc {
+    width: 90%;
 }
 .about-story {
     margin-top: 30px;
@@ -457,16 +420,6 @@ nav.scrolled {
     transform: scale(0);
 }
 
-.doublerectangle {
-    z-index: -1;
-    width: 33%;
-    position: absolute;
-    top: 10%;
-    bottom: 0;
-    margin: auto 0;
-    left: 60%;
-    padding-top: 8%;
-}
 .line {
     width: 100%;
     height: 3px;
@@ -479,15 +432,12 @@ nav.scrolled {
     background: rgba(45, 46, 51, 0.7);
     padding: 20px;
     font-size: 13px;
-}
-.gigachad2 {
-    margin-right: 2rem;
-    margin-left: 2rem;
+    line-height: 2em;
+    text-align: justify;
 }
 .loader-wrapper {
     width: 350px;
     height: 350px;
-    /* margin-right: auto; */
 }
 .loader {
     width: 100%;
@@ -545,11 +495,10 @@ nav.scrolled {
     transform: translate(-50%, -50%);
 }
 
-/* experience */
+/* Qualification */
 .qualification-heading {
     color: #FFFFFF;
     font-family: 'Questrial';
-    letter-spacing: 1px;
     font-size: 30px;
     line-height: 35px;
     margin-bottom: 3rem;
@@ -561,6 +510,9 @@ nav.scrolled {
     letter-spacing: 1px;
     font-size: 24px;
     line-height: 35px;
+}
+.experience, .education {
+    width: 90%;
 }
 #experience, #education {
     padding-left: 50px;
@@ -606,14 +558,13 @@ nav.scrolled {
 }
 .dottedgrid {
     position: absolute;
-    width: 18%;
+    width: 20%;
     right: 0;
-    margin-right: -2%;
-    margin-top: 6%;
-    opacity: 0.5;
+    margin-right: 2%;
+    margin-top: -2%;
 }
 
-/* Works */
+/* Project */
 .works-text {
     color: #FFFFFF;
     font-family: 'Questrial';
@@ -634,9 +585,11 @@ nav.scrolled {
 .project-box {
     position: relative;
     background: #333448;
-    width: 90%;
+    width: 320px;
+    height: 430px;
     border-radius: 12px;
     cursor: pointer;
+    margin: 20px;
     transition: .5s box-shadow ease, .5s transform ease;
 }
 @keyframes box-shadow {
@@ -723,6 +676,8 @@ nav.scrolled {
     margin-left: -3%;
     margin-top: 5%;
 }
+
+/* Contact */
 .contact-desc {
     color: rgba(255, 255, 255, 0.6);
     font-size: 16px;
@@ -768,7 +723,7 @@ nav.scrolled {
 .contact-box {
     background: #333448;
     padding: 28px 25px;
-    width: 80%;
+    width: 400px;
     height: fit-content;
     border-radius: 10px;
 }
@@ -816,10 +771,9 @@ nav.scrolled {
 .doublecircle {
     position: absolute;
     width: 32%;
-    bottom: 0;
-    right: 0;
     z-index: -1;
-    margin-right: -20%;
+    margin-left: 2rem;
+    margin-top: -3rem;
 }
 .navbar-toggler {
     background: none !important;
@@ -830,14 +784,11 @@ nav.scrolled {
     padding: 0 !important;
     margin: 0 !important;
 }
-.swal2-popup, .swal2-modal {
-    font-family: 'Poppins' !important;
-}
+
 
 /* Skills */
-.card-skill-container {
-    display: flex;
-    place-items: center;
+.skills-box {
+    width: 90%;
 }
 .card-skill {
     position: relative;
@@ -850,9 +801,6 @@ nav.scrolled {
     margin: 12px;
     border-radius: 12px;
 }
-/* .card-skill:hover {
-    box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
-} */
 .card-skill:hover .image-skill img {
     transform: scale(1.1);
     opacity: 0.6;
@@ -950,6 +898,11 @@ figcaption button:hover {
     transform: scale(1.1);
     background: #e64533;
 }
+.works-projects, .skill-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 /* Media */
 @media (max-width: 1199.98px) {
@@ -959,6 +912,9 @@ figcaption button:hover {
     }
 }
 @media (max-width: 991.98px) {
+    .home, .about, .qualification, .contact {
+        flex-wrap: wrap;
+    }
     .summary {
         order: 2 !important;
         display: flex;
@@ -980,9 +936,6 @@ figcaption button:hover {
     .project-desc {
         font-size: 12px;
     }
-    .project-box, .card-skill {
-        width: 100%;
-    }
     .box-item {
         width: 230px;
     }
@@ -990,21 +943,11 @@ figcaption button:hover {
         width: 22%;
         margin-top: 10%;
     }
-    .contact-box {
-        width: 100%;
-    }
     .navbar-nav {
         justify-content: center;
     }
     .doublerectangle {
         display: none;
-    }
-    .card-skill {
-        height: 100%;
-        width: 100%;
-    }
-    .card-skill .image-skill {
-        height: 300px;
     }
     .content-skill .title-skill {
         font-size: 18px;
@@ -1039,13 +982,6 @@ figcaption button:hover {
         justify-content: center;
         align-items: center;
     }
-    .card-skill-container {
-        display: block;
-    }
-    .card-skill {
-        margin: 0 auto;
-        margin-top: 20px;
-    }
     .gigachad1 {
         width: 350px;
     }
@@ -1060,10 +996,6 @@ figcaption button:hover {
         margin-right: auto;
         margin-left: auto;
     }
-    /* .about-dsc {
-        margin-left: 10px;
-        margin-right: 10px;
-    } */
     .porch-desc {
         width: 100%;
     }
@@ -1080,10 +1012,6 @@ figcaption button:hover {
     .about-story {
         margin-top: 40px;
     }
-    .project-box {
-        width: 70%;
-        margin-bottom: 45px;
-    }
     .box-item {
         width: 300px;
     }
@@ -1099,10 +1027,6 @@ figcaption button:hover {
     .homebg {
         transform: rotate(90deg);
         width: 100%;
-    }
-    .card-skill {
-        height: 70%;
-        width: 70%;
     }
     .card-skill .image-skill {
         height: 400px;
@@ -1122,7 +1046,7 @@ figcaption button:hover {
     figcaption .bottom-skill p {
         font-size: 14px;
     }
-    .qual {
+    .education {
         margin-top: 70px;
     }
 }
