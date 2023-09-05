@@ -23,26 +23,22 @@ section {
     height: 100vh;
     position: relative;
 }
-section#skills, section#about, section#qualification, section#works, section#contact, section#project {
+section#about, section#qualification, section#project, section#skills, section#contact {
     height: fit-content;
-    padding: 20vh 0;
+    padding-top: 13rem;
 }
 section#home {
     height: fit-content;
-    padding-top: 10vh;
+    padding-top: 10rem;
 }
-section#works, section#project {
-    padding-top: 10vh;
-}
-section#contact {
-    padding-top: 15vh;
-    padding-bottom: 12vh;
+#footer {
+    padding-top: 6rem;
 }
 
 /* Background */
 .home-bg video {
     position: fixed;
-    z-index: -1;
+    z-index: -99;
     top: 0;
     left: 0;
     width: 100%;
@@ -50,7 +46,7 @@ section#contact {
 }
 .background {
     position: fixed;
-    z-index: -3;
+    z-index: -99;
     top: 0;
     left: 0;
     width: 100%;
@@ -63,9 +59,7 @@ section#contact {
     height: 420px;
     margin: auto;
     transform-origin: right;
-    /* animation: colorChange 2s linear infinite; */
 }
-
 @keyframes colorChange {
     0% {
         filter: hue-rotate(0deg);
@@ -230,6 +224,15 @@ nav.scrolled {
     color: rgba(255, 255, 255, 0.7);
     transform: translateY(-2px);
 }
+.navbar-toggler {
+    background: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    fill: #FFFFFF !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
 .navbar-toggler:hover {
     transform: translateY(-2px);
     color : rgba(255, 255, 255, 0.7);
@@ -300,11 +303,35 @@ nav.scrolled {
 .btn-light svg {
     margin-left: 18px;
 }
+.btn.project-btn {
+    position: relative;
+    bottom: 0;
+    height: 35px;
+    padding: 0 15px;
+    margin: 0;
+    margin-top: 20px;
+    border-radius: 8px;
+    width: fit-content;
+}
+.project-btn {
+    font-size: 14px;
+    font-family: 'Poppins';
+    background: #444559;
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 20px;
+    transition: .5s background ease, .5s color ease, .5s transform ease;
+}
+.project-btn:hover {
+    background: white;
+    color: #28293D;
+    transform: translateY(-4px);
+}
+.project-btn svg {
+    margin-top: -3px;
+    margin-left: 18px;
+}
 
 /* Home */
-.home {
-    margin-top: 8rem;
-}
 .summary {
     color: rgba(255, 255, 255, 0.7);
     font-size: 17px;
@@ -353,9 +380,6 @@ nav.scrolled {
 }
 
 /* About */
-.about {
-    margin-top: 5rem;
-}
 .about-text {
     color: #FFFFFF;
     font-family: 'Questrial';
@@ -626,33 +650,6 @@ nav.scrolled {
     color: rgba(255, 255, 255, 0.5);
     font-size: 14px;
 }
-.btn.project-btn {
-    position: relative;
-    bottom: 0;
-    height: 35px;
-    padding: 0 15px;
-    margin: 0;
-    margin-top: 20px;
-    border-radius: 8px;
-    width: fit-content;
-}
-.project-btn {
-    font-size: 14px;
-    font-family: 'Poppins';
-    background: #444559;
-    color: rgba(255, 255, 255, 0.7);
-    margin-left: 20px;
-    transition: .5s background ease, .5s color ease, .5s transform ease;
-}
-.project-btn:hover {
-    background: white;
-    color: #28293D;
-    transform: translateY(-4px);
-}
-.project-btn svg {
-    margin-top: -3px;
-    margin-left: 18px;
-}
 .project-tag {
     background: #444559;
     font-size: 13px;
@@ -678,6 +675,9 @@ nav.scrolled {
 }
 
 /* Contact */
+.contact {
+    /* width: 90%; */
+}
 .contact-desc {
     color: rgba(255, 255, 255, 0.6);
     font-size: 16px;
@@ -775,16 +775,6 @@ nav.scrolled {
     margin-left: 2rem;
     margin-top: -3rem;
 }
-.navbar-toggler {
-    background: none !important;
-    outline: none !important;
-    box-shadow: none !important;
-    border: none !important;
-    fill: #FFFFFF !important;
-    padding: 0 !important;
-    margin: 0 !important;
-}
-
 
 /* Skills */
 .skills-box {
@@ -1117,7 +1107,7 @@ figcaption button:hover {
         transition: opacity 0.3s ease;
     }
     .navbar-nav .nav-link {
-        /* text-align: center; */
+        text-align: center;
         margin-bottom: 5px;
     }
     .navbar-nav.show {
