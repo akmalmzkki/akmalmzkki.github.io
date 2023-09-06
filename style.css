@@ -347,7 +347,7 @@ nav.scrolled {
 }
 .porch-desc {
     margin-top: 2rem;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.7);
     font-size: 14px;
     font-family: 'Poppins';
     padding: 20px;
@@ -363,6 +363,7 @@ nav.scrolled {
     height: auto;
     z-index: -1;
     animation: animate-shakes 10s ease-in-out infinite;
+    filter: drop-shadow(0 0 0.3rem rgba(255, 255, 255, 0.7));
 }
 .doublerectangle {
     z-index: -1;
