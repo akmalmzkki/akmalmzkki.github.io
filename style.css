@@ -304,12 +304,13 @@ nav.scrolled {
     margin-left: 18px;
 }
 .btn.project-btn {
-    position: relative;
+    position: absolute;
     bottom: 0;
     height: 35px;
     padding: 0 15px;
     margin: 0;
-    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-top: 60px;
     border-radius: 8px;
     width: fit-content;
 }
@@ -456,7 +457,7 @@ nav.scrolled {
 .dsc {
     background: rgba(45, 46, 51, 0.7);
     padding: 20px;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 2em;
     text-align: justify;
 }
@@ -565,6 +566,7 @@ nav.scrolled {
     color: rgba(255, 255, 255, 0.6);
     background: rgba(45, 46, 51, 0.7);
     padding: 10px;
+    text-align: justify;
 }
 .qualification-section#first {
     padding-top: 35px;
@@ -650,6 +652,7 @@ nav.scrolled {
     font-family: 'Poppins';
     color: rgba(255, 255, 255, 0.5);
     font-size: 14px;
+    text-align: justify;
 }
 .project-tag {
     background: #444559;
@@ -802,7 +805,7 @@ nav.scrolled {
 .image-skill img {
     height: 100%;
     width: 100%;
-    transition: 0.3s;
+    transition: 0.6s;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
@@ -816,7 +819,7 @@ nav.scrolled {
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
 }
-.card-skill .content-skill:hover {
+.content-skill:hover, figcaption:hover {
     border-radius: 12px;
 }
 .content-skill .title-skill {
@@ -825,6 +828,7 @@ nav.scrolled {
     font-family: 'Questrial';
 }
 .content-skill .sub-title-skill {
+    display: block;
     font-size: 14px;
     color: rgba(255, 255, 255, 0.6);
     font-family: 'Poppins';
@@ -846,12 +850,14 @@ nav.scrolled {
 .bottom-skill button {
     float: left;
     padding: 7px 15px;
-    font-size: 17px;
+    font-size: 15px;
     background: #e74c3c;
     color: white;
     border: none;
     margin: 10px 0;
     transition: 0.3s ease-in-out;
+    border-radius: 4px;
+    bottom: 0;
 }
 .bottom-skill button:hover {
     transform: scale(1.1);
@@ -872,10 +878,10 @@ nav.scrolled {
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
 }
-figcaption button {
+/* figcaption button {
     float: left;
     padding: 7px 15px;
-    font-size: 17px;
+    font-size: 14px;
     background: #e74c3c;
     color: white;
     border: none;
@@ -885,7 +891,7 @@ figcaption button {
 figcaption button:hover {
     transform: scale(1.1);
     background: #e64533;
-}
+} */
 .works-projects, .skill-box {
     display: flex;
     flex-wrap: wrap;

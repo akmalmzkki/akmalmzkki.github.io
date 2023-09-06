@@ -78,9 +78,11 @@ $('.nav-link').hover(
 $('.card-skill').hover(
     function () {
         $(this).find(".bottom-skill").slideDown(500);
+        $(this).find(".sub-title-skill").css("display", "none");
     }, 
     function () {
         $(this).find(".bottom-skill").slideUp(500);
+        $(this).find(".sub-title-skill").css("display", "block");
     }
 );
 
