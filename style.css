@@ -23,13 +23,17 @@ section {
     height: 100vh;
     position: relative;
 }
-section#about, section#qualification, section#project, section#skills, section#contact {
+section#qualification, section#project, section#skills, section#contact {
     height: fit-content;
     padding-top: 13rem;
 }
+section#about {
+    height: fit-content;
+    padding-top: 8rem;
+}
 section#home {
     height: fit-content;
-    padding-top: 10rem;
+    padding-top: 15%;
 }
 #footer {
     padding-top: 6rem;
@@ -410,6 +414,12 @@ nav.scrolled {
     animation: animate-shakes 10s ease-in-out infinite;
     filter: drop-shadow(0 0 0.3rem rgba(255, 255, 255, 0.7));
 }
+.doublerectangle1 {
+    z-index: -1;
+    width: 380px;
+    position: absolute;
+    left: 20px;
+}
 .doublerectangle {
     z-index: -1;
     width: 380px;
@@ -493,8 +503,7 @@ nav.scrolled {
 .line {
     width: 100%;
     height: 3px;
-    background: #FFFFFF;
-    opacity: 0.2;
+    background: #a59999;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -922,20 +931,6 @@ nav.scrolled {
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
 }
-/* figcaption button {
-    float: left;
-    padding: 7px 15px;
-    font-size: 14px;
-    background: #e74c3c;
-    color: white;
-    border: none;
-    margin: 10px 0;
-    transition: 0.3s ease-in-out;
-}
-figcaption button:hover {
-    transform: scale(1.1);
-    background: #e64533;
-} */
 .works-projects, .skill-box {
     display: flex;
     flex-wrap: wrap;
@@ -946,6 +941,9 @@ figcaption button:hover {
 @media (max-width: 991.98px) {
     .home, .about, .qualification, .contact {
         flex-wrap: wrap;
+    }
+    section#home {
+        padding-top: 12rem;
     }
     .summary {
         order: 2 !important;
@@ -978,7 +976,7 @@ figcaption button:hover {
     .navbar-nav {
         justify-content: center;
     }
-    .doublerectangle {
+    .doublerectangle, .doublerectangle1 {
         display: none;
     }
     .content-skill .title-skill {
