@@ -35,6 +35,15 @@ $('.btn-dark').hover(
     }
 );
 
+$('.card-ed').hover(
+    function () {
+        $(this).find('.card-ed-title .major').css('display', 'contents');
+        
+    }, function () {
+        $(this).find('.card-ed-title .major').css('display', 'none');
+    }
+);
+
 // Hover btn-light
 $('.btn-light').hover(
     function () {

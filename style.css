@@ -688,6 +688,9 @@ nav.scrolled {
     opacity: 0;
     transition: transform 500ms ease-out, opacity 500ms ease-out;
 }
+.card-ed-title .major {
+    display: none;
+}
 .card-ed:hover {
     transform: scale(1.05);
     transition: transform 500ms ease-in;
@@ -1188,6 +1191,13 @@ nav.scrolled {
     .summary {
         order: 2 !important;
         margin-top: 15%;
+    }
+    .card-ed-content {
+        transform: translateY(63%);
+    }
+    .card-ed-major {
+        font-size: 24px;
+        font-weight: bold;
     }
     .education {
         flex-wrap: wrap;
