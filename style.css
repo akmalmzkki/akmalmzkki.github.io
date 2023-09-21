@@ -673,7 +673,7 @@ nav.scrolled {
     background-color: hsl(46, 100%, 50%);
 }
 
-@media (any-hover: hover) and (any-pointer: fine) {
+@media (any-hover: hover) {
     .card-ed-content {
         transform: translateY(50%);
         transition: transform 500ms ease-out;
