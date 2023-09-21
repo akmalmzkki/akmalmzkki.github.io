@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-
 html {
     scroll-behavior: smooth !important;
 }   
@@ -23,7 +22,7 @@ section {
     height: 100vh;
     position: relative;
 }
-section#qualification, section#project, section#skills, section#contact {
+section#qualification, section#project, section#skills, section#contact, section#education {
     height: fit-content;
     padding-top: 13rem;
 }
@@ -574,6 +573,169 @@ nav.scrolled {
     transform: translate(-50%, -50%);
 }
 
+/* Education */
+.internet-crushed {
+    position: absolute;
+    right: 0;
+    margin-right: 10%;
+    margin-top: 7%;
+    width: 30%;
+}
+.galaxy-crushed {
+    position: absolute;
+    margin-left: 5%;
+    width: 30%;
+}
+.education-heading {
+    color: #FFFFFF;
+    font-family: 'Questrial';
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+.flow > * + * {
+    margin-top: var(--flow-space, 4em);
+}
+.card-ed {
+    display: grid;
+    place-items: center;
+    width: 400px;
+    max-width: 20.875rem;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 0.625rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+}
+.major {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+} 
+.card-ed > * {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.card-ed-description {
+    font-family: "Questrial";
+    font-size: 14px;
+    text-align: justify;
+}
+.card-ed-title {
+    font-family: "Questrial";
+}
+.card-ed-major {
+    font-size: 30px;
+    font-weight: bold;
+}
+.card-ed-background {
+    object-fit: cover;
+    max-width: 100%;
+    height: 100%;
+}
+.card-ed img {
+    width: 1920;
+    height: 2160;
+}
+.card-ed-content {
+    --flow-space: 0.9375rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: flex-end;
+    height:78%;
+    padding: 12% 1.25rem 1.875rem;
+    background: linear-gradient(
+        180deg,
+        hsla(0, 0%, 0%, 0) 0%,
+        hsla(0, 0%, 0%, 0.3) 10%,
+        hsl(0, 0%, 0%) 100%
+    );
+}
+
+.card-ed-content--container {
+    --flow-space: 1.25rem;
+}
+
+.card-ed-title {
+    position: relative;
+    width: fit-content;
+    width: -moz-fit-content;
+}
+
+.card-ed-title::after {
+    content: "";
+    position: absolute;
+    height: 0.3125rem;
+    width: calc(100% + 1.25rem);
+    bottom: calc((1.25rem - 0.5rem) * -1);
+    left: -1.25rem;
+    background-color: hsl(46, 100%, 50%);
+}
+
+@media (any-hover: hover) and (any-pointer: fine) {
+    .card-ed-content {
+        transform: translateY(50%);
+        transition: transform 500ms ease-out;
+        transition-delay: 500ms;
+    }
+
+    .card-ed-title::after {
+        opacity: 0;
+        transform: scaleX(0);
+        transition: opacity 1000ms ease-in, transform 500ms ease-out;
+        transition-delay: 500ms;
+        transform-origin: right;
+    }
+
+    .card-ed-background {
+        transition: transform 500ms ease-in;
+    }
+
+    .card-ed-content--container > :not(.card-ed-title) {
+        opacity: 0;
+        transition: transform 500ms ease-out, opacity 500ms ease-out;
+    }
+
+    .card-ed:hover,
+    .card-ed:focus-within {
+        transform: scale(1.05);
+        transition: transform 500ms ease-in;
+    }
+
+    .card-ed:hover .card-ed-content,
+    .card-ed:focus-within .card-ed-content {
+        transform: translateY(0);
+        transition: transform 500ms ease-in;
+    }
+
+    .card-ed:focus-within .card-ed-content {
+        transition-duration: 0ms;
+    }
+
+    .card-ed:hover .card-ed-background,
+    .card-ed:focus-within .card-ed-background {
+        transform: scale(1.3);
+    }
+
+    .card-ed:hover .card-ed-content--container > :not(.card-ed-title),
+    .card-ed:focus-within .card-ed-content--container > :not(.card-ed-title),
+    .card-ed:focus-within {
+        opacity: 1;
+        transition: opacity 500ms ease-in;
+        transition-delay: 1000ms;
+    }
+
+    .card-ed:hover .card-ed-title::after,
+    .card-ed:focus-within .card-ed-title::after {
+        opacity: 1;
+        transform: scaleX(1);
+        transform-origin: left;
+        transition: opacity 500ms ease-in, transform 500ms ease-in;
+        transition-delay: 500ms;
+    }
+}
+
 /* Qualification */
 .qualification-heading {
     color: #FFFFFF;
@@ -583,17 +745,25 @@ nav.scrolled {
     margin-bottom: 3rem;
     font-weight: bold;
 }
+.courses-heading {
+    font-family: 'Questrial';
+    font-size: 30px;
+    margin-bottom: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+}
 .experience-heading {
     color: #FFFFFF;
     font-family: 'Questrial';
     letter-spacing: 1px;
     font-size: 24px;
     line-height: 35px;
+    cursor: pointer;
 }
-.experience, .education {
+.experience, .courses {
     width: 90%;
 }
-#experience, #education {
+#experience, #courses {
     padding-left: 50px;
     border-left: 1px solid #D4D4D8;
     position: relative;
@@ -1009,6 +1179,9 @@ nav.scrolled {
         order: 2 !important;
         margin-top: 15%;
     }
+    .education {
+        flex-wrap: wrap;
+    }
     .mypict {
         order: 1 !important;
         display: flex;
@@ -1075,7 +1248,7 @@ nav.scrolled {
     figcaption .bottom-skill p {
         font-size: 14px;
     }
-    .education {
+    .courses {
         margin-top: 70px;
     }
 }
