@@ -652,17 +652,14 @@ nav.scrolled {
         hsl(0, 0%, 0%) 100%
     );
 }
-
 .card-ed-content--container {
     --flow-space: 1.25rem;
 }
-
 .card-ed-title {
     position: relative;
     width: fit-content;
     width: -moz-fit-content;
 }
-
 .card-ed-title::after {
     content: "";
     position: absolute;
@@ -672,68 +669,56 @@ nav.scrolled {
     left: -1.25rem;
     background-color: hsl(46, 100%, 50%);
 }
-
-@media (any-hover: hover) {
-    .card-ed-content {
-        transform: translateY(50%);
-        transition: transform 500ms ease-out;
-        transition-delay: 500ms;
-    }
-
-    .card-ed-title::after {
-        opacity: 0;
-        transform: scaleX(0);
-        transition: opacity 1000ms ease-in, transform 500ms ease-out;
-        transition-delay: 500ms;
-        transform-origin: right;
-    }
-
-    .card-ed-background {
-        transition: transform 500ms ease-in;
-    }
-
-    .card-ed-content--container > :not(.card-ed-title) {
-        opacity: 0;
-        transition: transform 500ms ease-out, opacity 500ms ease-out;
-    }
-
-    .card-ed:hover,
-    .card-ed:focus-within {
-        transform: scale(1.05);
-        transition: transform 500ms ease-in;
-    }
-
-    .card-ed:hover .card-ed-content,
-    .card-ed:focus-within .card-ed-content {
-        transform: translateY(0);
-        transition: transform 500ms ease-in;
-    }
-
-    .card-ed:focus-within .card-ed-content {
-        transition-duration: 0ms;
-    }
-
-    .card-ed:hover .card-ed-background,
-    .card-ed:focus-within .card-ed-background {
-        transform: scale(1.3);
-    }
-
-    .card-ed:hover .card-ed-content--container > :not(.card-ed-title),
-    .card-ed:focus-within .card-ed-content--container > :not(.card-ed-title),
-    .card-ed:focus-within {
-        opacity: 1;
-        transition: opacity 500ms ease-in;
-        transition-delay: 1000ms;
-    }
-
-    .card-ed:hover .card-ed-title::after,
-    .card-ed:focus-within .card-ed-title::after {
-        opacity: 1;
-        transform: scaleX(1);
-        transform-origin: left;
-        transition: opacity 500ms ease-in, transform 500ms ease-in;
-        transition-delay: 500ms;
-    }
+.card-ed-content {
+    transform: translateY(50%);
+    transition: transform 500ms ease-out;
+    transition-delay: 500ms;
+}
+.card-ed-title::after {
+    opacity: 0;
+    transform: scaleX(0);
+    transition: opacity 1000ms ease-in, transform 500ms ease-out;
+    transition-delay: 500ms;
+    transform-origin: right;
+}
+.card-ed-background {
+    transition: transform 500ms ease-in;
+}
+.card-ed-content--container > :not(.card-ed-title) {
+    opacity: 0;
+    transition: transform 500ms ease-out, opacity 500ms ease-out;
+}
+.card-ed:hover,
+.card-ed:focus-within {
+    transform: scale(1.05);
+    transition: transform 500ms ease-in;
+}
+.card-ed:hover .card-ed-content,
+.card-ed:focus-within .card-ed-content {
+    transform: translateY(0);
+    transition: transform 500ms ease-in;
+}
+.card-ed:focus-within .card-ed-content {
+    transition-duration: 0ms;
+}
+.card-ed:hover .card-ed-background,
+.card-ed:focus-within .card-ed-background {
+    transform: scale(1.3);
+}
+.card-ed:hover .card-ed-content--container > :not(.card-ed-title),
+.card-ed:focus-within .card-ed-content--container > :not(.card-ed-title),
+.card-ed:focus-within {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+    transition-delay: 1000ms;
+}
+.card-ed:hover .card-ed-title::after,
+.card-ed:focus-within .card-ed-title::after {
+    opacity: 1;
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: opacity 500ms ease-in, transform 500ms ease-in;
+    transition-delay: 500ms;
 }
 
 /* Qualification */
