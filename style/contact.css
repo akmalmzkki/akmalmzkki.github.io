@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.contact-desc {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    font-family: 'Poppins';
+}
+.contact-text {
+    color: #FFFFFF;
+    font-family: 'Questrial';
+    letter-spacing: 1px;
+    font-size: 30px;
+    line-height: 35px;
+}
+.contact-line {
+    height: 2px;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    margin-top: 15px;
+}
+.contact-title {
+    font-size: 16px;
+    color: #FFFFFF;
+    font-family: 'Questrial';
+    word-spacing: 5px;
+}
+.contact-title i {
+    font-size: 11px;
+}
+.contact-info  {
+    margin-top: 30px;
+}
+.contact-info .col-md-6 {
+    margin-top: 20px;
+}
+.contact-sub-info {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: 'Poppins';
+    text-decoration: none;
+}
+.contact-sub-info:hover {
+    color: white;
+}
+.contact-box {
+    background: #333448;
+    padding: 28px 25px;
+    width: 400px;
+    height: fit-content;
+    border-radius: 10px;
+}
+.contact-label {
+    font-size: 15px;
+    color: #FFFFFF;
+    font-family: 'Questrial';
+}
+.contact-input {
+    font-size: 14px;
+    color: #FFFFFF;
+    background: #444559;
+    outline: none !important;
+    box-shadow: none !important;
+    border: none;
+    font-family: 'Poppins';
+    width: 100%;
+    margin: 10px 0;
+    padding: 7px 12px;
+    border-radius: 5px;
+}
+.contact-input:focus {
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+.contact-buttons {
+    margin-top: 15px;
+}
+.contact-buttons .btn {
+    font-size: 15px;
+    height: 38px;
+}
+.send-button {
+    padding: 0 17px;
+    margin-left: 20px;
+}
+.send-button svg {
+    margin-left: 14px;
+}
+.copyright-footer {
+    height: 80px;
+    font-family: 'Poppins';
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}
+.doublecircle {
+    position: absolute;
+    width: 32%;
+    z-index: -1;
+    margin-left: 2rem;
+    margin-top: -3rem;
+}
+
+@media (max-width: 991.98px) {
+    .contact {
+        flex-wrap: wrap;
+    }
+    .contact-box {
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .contact-title {
+        font-size: 14px;
+    }
+    .contact-title i {
+        font-size: 9px;
+    }
+    .doublecircle {
+        display: none;
+    }
+}

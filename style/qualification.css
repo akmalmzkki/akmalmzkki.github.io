@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.qualification-heading {
+    color: #FFFFFF;
+    font-family: 'Questrial';
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+.courses-heading {
+    font-family: 'Questrial';
+    font-size: 30px;
+    margin-bottom: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+.experience-heading {
+    color: #FFFFFF;
+    font-family: 'Questrial';
+    letter-spacing: 1px;
+    font-size: 24px;
+    line-height: 35px;
+    cursor: pointer;
+}
+.experience, .courses {
+    width: 90%;
+}
+#experience, #courses {
+    padding-left: 50px;
+    border-left: 1px solid #D4D4D8;
+    position: relative;
+    margin-top: 70px;
+}
+.qualification-section {
+    margin-top: 22px;
+}
+.qualification-text {
+    font-family: 'Questrial';
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+.qualification-text span {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}
+.qualification-desc {
+    margin-top: 5px;
+    font-size: 14px;
+    font-family: 'Poppins';
+    color: rgba(255, 255, 255, 0.6);
+    background: rgba(45, 46, 51, 0.7);
+    padding: 10px;
+    text-align: justify;
+}
+.qualification-section#first {
+    padding-top: 35px;
+}
+.qualification-section#last {
+    padding-bottom: 35px;
+}
+.qualification-point {
+    background: #ffffff;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    left: 0;
+    margin-top: 8.5px;
+    margin-left: -5px;
+}
+.dottedgrid {
+    position: absolute;
+    width: 20%;
+    right: 0;
+    margin-right: 2%;
+    margin-top: -2%;
+}
+
+@media (max-width: 991.98px) {
+    .qualification {
+        flex-wrap: wrap;
+    }
+    .dottedgrid {
+        display: none;
+    }
+    .courses {
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .qualification-text {
+        font-size: 18px;
+    }
+    .qualification-text span {
+        font-size: 12px;
+    }
+    .qualification-desc {
+        font-size: 12px;
+    }
+}

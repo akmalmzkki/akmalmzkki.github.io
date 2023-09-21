@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.skills-box {
+    width: 90%;
+}
+.card-skill {
+    position: relative;
+    height: 400px;
+    width: 300px;
+    display: block;
+    background: white;
+    box-shadow: 0px 1px 2px 0px rgba(222, 214, 214, 0.15);
+    transition: 0.4s linear;
+    margin: 12px;
+    border-radius: 12px;
+}
+.card-skill:hover .image-skill img {
+    transform: scale(1.1);
+    opacity: 0.6;
+}
+.card-skill .image-skill {
+    background: black;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.image-skill img {
+    height: 100%;
+    width: 100%;
+    transition: 0.6s;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.card-skill .content-skill {
+    position: absolute;
+    bottom: 0px;
+    background: #444559;
+    width: 100%;
+    text-align: center;
+    padding: 20px 30px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.content-skill:hover, figcaption:hover {
+    border-radius: 12px;
+}
+.content-skill .title-skill {
+    font-size: 20px;
+    color: white;
+    font-family: 'Questrial';
+}
+.content-skill .sub-title-skill {
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: 'Poppins';
+}
+.bottom-skill ul {
+    color: white;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1.8em;
+    font-family: 'Poppins';
+    list-style-type: none;
+}
+.bottom-skill p {
+    color: white;
+    font-size: 14px;
+    text-align: justify;
+    font-family: 'Poppins';
+}
+.bottom-skill {
+    display: none;
+}
+.card-skill figcaption {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #444559;
+    padding: 20px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.works-projects, .skill-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (max-width: 991.98px) {
+
+}
+
+@media (max-width: 767.98px) {
+    .title-skill {
+        font-size: 18px;
+    }
+    .sub-title-skill {
+        font-size: 12px;
+    }
+    .bottom-skill ul, .bottom-skill p {
+        font-size: 12px;
+    }
+}

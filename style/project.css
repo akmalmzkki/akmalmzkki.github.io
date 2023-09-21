@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.works-text {
+    color: #FFFFFF;
+    font-family: 'Questrial';
+    letter-spacing: 1px;
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: bold;
+}
+.works-desc {
+    margin-top: 5px;
+    font-size: 14px;
+    font-family: 'Poppins';
+    color: rgba(255, 255, 255, 0.6);
+}
+.works-projects {
+    margin-top: 70px;
+}
+.project-box {
+    position: relative;
+    background: #333448;
+    width: 320px;
+    height: 430px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin: 20px;
+    transition: .5s box-shadow ease, .5s transform ease;
+}
+@keyframes box-shadow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}
+.project-box:hover {
+    transform: scale(1.03);
+    box-shadow: 3px 25px 30px 0px rgba(0,0,0,.08);
+}
+.project-img img {
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.project-content {
+    padding: 20px;
+    padding-top: 18px;
+    padding-bottom: 21px;
+}
+.project-title {
+    font-family: 'Questrial';
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+.project-desc {
+    margin-top: 3px;
+    font-family: 'Poppins';
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    text-align: justify;
+}
+.project-tag {
+    background: #444559;
+    font-size: 13px;
+    font-family: 'Poppins';
+    color: rgba(255, 255, 255, 0.5);
+    padding: 1px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 7px;
+}
+.btn.dribble {
+    margin-top: 72px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-delay: 3ms;
+}
+.rotatedrectangle {
+    width: 40%;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    margin-left: -3%;
+    margin-top: 5%;
+}
+
+@media (max-width: 991.98px) {
+
+}
+
+@media (max-width: 767.98px) {
+    .works-heading {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .project-tag {
+        font-size: 12px;
+    }
+    .project-title {
+        font-size: 18px;
+    }
+    .project-desc {
+        font-size: 12px;
+    }
+}

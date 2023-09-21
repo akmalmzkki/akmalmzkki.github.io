@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+nav {
+    transition: .5s filter ease, .5s background-filter ease, .5s background ease;
+}
+.navbar-nav {
+    margin: 0;
+}
+nav.scrolled {
+    background: rgba(45, 46, 51, 0.7);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 9px 41px 0px rgba(0, 0, 0, .1);
+}
+.navbar-brand {
+    font-family: 'Questrial';
+    letter-spacing: 7px;
+    font-size: 2.5rem;
+    margin: 0;
+}
+.nav-link {
+    font-family: 'Questrial';
+    font-size: 17px;
+}
+.svg-dropdown {
+    margin-bottom: 3.5px;
+    transition: .5s transform ease;
+    transform: rotate(-90deg);
+}
+.svg-dropdown-left {
+    margin-right: 20px;
+}
+.navbar-brand, .nav-link, .nav-link:visited, .nav-link:active, .nav-link:focus {
+    color: white;
+    transition: .5s color ease, .5s transform ease;
+}
+.navbar-brand:hover, .nav-link:hover {
+    color: rgba(255, 255, 255, 0.7);
+    transform: translateY(-2px);
+}
+.navbar-toggler {
+    background: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    fill: #FFFFFF !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.navbar-toggler:hover {
+    transform: translateY(-2px);
+    color : rgba(255, 255, 255, 0.7);
+}
+.navbar-toggler {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.navbar-toggler.clicked {
+    background-color: #28293D;
+    transform: rotate(180deg);
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+    padding: 10px;
+    z-index: 1;
+    list-style-type: none;
+    background: rgba(45, 46, 51, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    margin-top: 10px;
+}
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-left: 1rem;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        display: flex;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        text-align: left;
+        flex-direction: column;
+        place-items: center;
+    }
+    .navbar-nav a {
+        text-align: left;
+    }
+    .navbar-nav .nav-link {
+        margin-bottom: 5px;
+    }
+    .navbar-nav.show {
+        opacity: 1;
+    }
+    .nav-link {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+}

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.summary {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 17px;
+    line-height: 1.5em;
+    width: 90%;
+}
+.porch-heading {
+    font-size: 50px;
+    color: #ffffff !important;
+    font-family: 'Questrial';
+    line-height: 1em;
+    letter-spacing: 2px;
+}
+.porch-desc {
+    margin-top: 2rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    font-family: 'Poppins';
+    padding: 20px;
+    background: rgba(45, 46, 51, 0.7);
+    text-align: justify;
+}
+.porch-buttons {
+    margin-top: 2.5rem;
+    font-family: 'Poppins';
+}
+.gigachad1 {
+    width: 400px;
+    height: auto;
+    z-index: -1;
+    animation: animate-shakes 10s ease-in-out infinite;
+    filter: drop-shadow(0 0 0.3rem rgba(255, 255, 255, 0.7));
+}
+.doublerectangle1 {
+    z-index: -1;
+    width: 380px;
+    position: absolute;
+    left: 20px;
+}
+@keyframes animate-shakes {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-18px)
+    }
+}
+
+@media (max-width: 991.98px) {
+    .home {
+        flex-wrap: wrap;
+    }
+    .summary {
+        order: 2 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mypict {
+        order: 1 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .porch-desc {
+        width: 80%;
+    }
+    section#home {
+        padding-top: 12rem;
+    }
+    .doublerectangle1 {
+        display: none;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .home {
+        /* order: 2 !important; */
+        margin-top: 20%;
+    }
+    .porch-desc {
+        width: 100%;
+        font-size: 12px;
+    }
+    .porch-heading {
+        font-size: 40px;
+        margin-left: 5%;
+    }
+    .gigachad1 {
+        width: 350px;
+    }
+}

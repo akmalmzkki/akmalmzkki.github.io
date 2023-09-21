@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+.btn {
+    font-size: 15px;
+    height: 45px;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-radius: 0;
+    padding: 0 24px;
+    font-family: 'Poppins';
+}
+.btn-light {
+    background: white;
+    color: #28293D;
+    transition: .5s background ease, .5s color ease, .5s transform ease;
+}
+.btn-light:hover {
+    background: #444559;
+    color: white;
+    transform: translateY(-4px);
+}
+.btn-dark, .btn-dark:active, .btn-dark:focus {
+    background: #444559;
+    color: white;
+    margin-left: 20px;
+    transition: .5s background ease, .5s color ease, .5s transform ease;
+}
+.btn-dark:hover {
+    background: white;
+    color: #28293D;
+    transform: translateY(-4px);
+}
+.btn-dark svg, .btn-light svg {
+    margin-top: -3px;
+    margin-left: 15px;
+}
+.btn-light svg {
+    margin-left: 18px;
+}
+.btn.project-btn {
+    position: absolute;
+    bottom: 0;
+    height: 35px;
+    padding: 0 15px;
+    margin: 0;
+    margin-bottom: 20px;
+    margin-top: 60px;
+    border-radius: 8px;
+    width: fit-content;
+}
+.project-btn {
+    font-size: 14px;
+    font-family: 'Poppins';
+    background: #444559;
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 20px;
+    transition: .5s background ease, .5s color ease, .5s transform ease;
+}
+.project-btn:hover {
+    background: white;
+    color: #28293D;
+    transform: translateY(-4px);
+}
+.project-btn svg {
+    margin-top: -3px;
+    margin-left: 18px;
+}
+.bottom-skill button {
+    float: left;
+    padding: 7px 15px;
+    font-size: 15px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    margin: 10px 0;
+    transition: 0.3s ease-in-out;
+    border-radius: 4px;
+    bottom: 0;
+}
+.bottom-skill button:hover {
+    transform: scale(1.1);
+    background: #e64533;
+}

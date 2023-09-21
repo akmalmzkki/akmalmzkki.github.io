@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Background */
+
+/* Navbar */
+
+/* Button */
+
+/* Home */
+
+/* About */
+
+/* Education */
+
+/* Qualification */
+
+/* Project */
+
+/* Contact */
+
+/* Skills */
+
+/* Width Operation */
+/* @media (max-width: 991.98px) {
+    .contact {
+        flex-wrap: wrap;
+    }
+    .project-title {
+        font-size: 18px;
+    }
+    .project-desc {
+        font-size: 12px;
+    }
+    .box-item {
+        width: 230px;
+    }
+    .dottedgrid {
+        width: 22%;
+        margin-top: 10%;
+    }
+    .navbar-nav {
+        justify-content: center;
+    }
+    .doublerectangle, .doublerectangle1 {
+        display: none;
+    }
+    .content-skill .title-skill {
+        font-size: 18px;
+    }
+    .content-skill .sub-title-skill {
+        font-size: 16px;
+    }
+    .bottom-skill ul {
+        font-size: 12px;
+    }
+    .bottom-skill button {
+        font-size: 14px;
+    }
+    figcaption .bottom-skill p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .card-ed-content {
+        transform: translateY(63%);
+    }
+    .assets-crushed {
+        display: none;
+    }
+    .card-ed-major {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .mypict {
+        order: 1 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .gigachad2 {
+        height: auto;
+        display: flex;
+        object-fit: cover;
+        margin-bottom: 4rem;
+        z-index: -1;
+        justify-content: center;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .box-item {
+        width: 300px;
+    }
+    .btn.dribbble {
+        margin-top: 25px;
+    }
+    .contact-box {
+        margin-top: 70px;
+    }
+    .doublerectangle {
+        display: none;
+    }
+    .card-skill .image-skill {
+        height: 400px;
+    }
+    .content-skill .title-skill {
+        font-size: 20px;
+    }
+    .content-skill .sub-title-skill {
+        font-size: 14px;
+    }
+    .bottom-skill ul {
+        font-size: 14px;
+    }
+    .bottom-skill button {
+        font-size: 17px;
+    }
+    figcaption .bottom-skill p {
+        font-size: 14px;
+    }
+    .courses {
+        margin-top: 70px;
+    }
+} */
+/* @media (max-width: 575.98px) {
+    .dottedgrid {
+        width: 30%;
+        margin-top: 100px;
+        opacity: 0.4;
+    }
+    .rotatedrectangle, .doublecircle {
+        width: 60%;
+    }
+    .rotatedrectangle {
+        margin-top: 100%;
+    }
+}
+@media (max-width: 500px){
+    .about-text {
+        font-size: 23px;
+    }
+}
+@media (max-width: 410px) {
+    .porch-buttons .btn {
+        font-size: 13px;
+    }
+    .works-text, .experience-heading, .contact-text {
+        font-size: 25px;
+    }
+}
+@media (max-width: 371px) {
+    .porch-buttons .btn {
+        font-size: 12px;
+    }
+}
+@media (max-width: 281px) {
+    .porch-heading {
+        font-size: 35px;
+    }
+    .porch-buttons .btn, .porch-desc, .porch-info-desc, .about-story, .qualification-desc
+, .btn.dribbble, .project-desc, .nav-link, .works-desc, .btn, .project-tag, .contact-desc {
+        font-size: 11px;
+    }
+    .project-title {
+        font-size: 14px;
+    }
+    .send-button svg {
+        display: none;
+    }
+    .porch-buttons .btn svg {
+        display: none;
+    }
+    .about-text, .works-text, .experience-heading, .contact-text {
+        font-size: 18px;
+        line-height: 22px;
+    }
+} */
