@@ -78,13 +78,6 @@
     font-size: 15px;
     height: 38px;
 }
-.send-button {
-    padding: 0 17px;
-    margin-left: 20px;
-}
-.send-button svg {
-    margin-left: 14px;
-}
 .copyright-footer {
     height: 80px;
     font-family: 'Poppins';

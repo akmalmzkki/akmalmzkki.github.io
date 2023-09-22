@@ -48,9 +48,11 @@ $('.card-ed').hover(
 $('.btn-light').hover(
     function () {
         $(this).children("svg").children("path").attr("stroke", "white");
+        $(this).children("svg").children("path").attr("fill", "white");
     }, 
     function () {
         $(this).children("svg").children("path").attr("stroke", "#28293D");
+        $(this).children("svg").children("path").attr("fill", "#28293D");
     }
 );
 
