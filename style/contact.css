@@ -118,4 +118,13 @@
     .doublecircle {
         display: none;
     }
+    .contact-label {
+        font-size: 13px;
+    }
+    .contact-input {
+        font-size: 12px;
+    }
+    .contact-buttons .btn {
+        font-size: 13px;
+    }
 }
